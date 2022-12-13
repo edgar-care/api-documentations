@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: edgar.care authentication API
+  description: This is the authentication part of the edgar.care API reference.
+  version: 0.0.1
+
+paths:
+  /private:
+    get:
+      summary: Get private information.
+      responses:
+        "200":
+          description: Yes.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    description: Token for the authenticated doctor.
+        "400":
+          description: The provided credentials are invalid.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Error message.
