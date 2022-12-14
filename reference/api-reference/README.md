@@ -16,4 +16,8 @@ Everything related to authentication :
 
 ## Patients
 
+{% content-ref url="patient.md" %}
+[patient.md](patient.md)
+{% endcontent-ref %}
+
 ## Doctors

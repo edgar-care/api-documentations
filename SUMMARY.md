@@ -8,3 +8,4 @@
 * [💡 API Reference](reference/api-reference/README.md)
   * [🔓 Authentication](reference/api-reference/authentication.md)
   * [👤 Patient](reference/api-reference/patient.md)
+  * [🩺 Doctor](reference/api-reference/doctor.md)

@@ -1,8 +1,6 @@
----
-description: Here are all the authentication functionalities implemented for now.
----
-
 # 🔓 Authentication
+
+Use the following endpoints to authenticate yourself as a `Patient` or a `Doctor` .
 
 {% hint style="info" %}
 Keep in mind that you have to use one of those to be granted a <mark style="color:red;">token</mark> that will enable you to use the whole API.
