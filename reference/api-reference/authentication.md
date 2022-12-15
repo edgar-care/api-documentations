@@ -3,8 +3,45 @@
 Use the following endpoints to authenticate yourself as a `Patient` or a `Doctor` .
 
 {% hint style="info" %}
-Keep in mind that you have to use one of those to be granted a <mark style="color:red;">token</mark> that will enable you to use the whole API.
+Keep in mind that you have to use one of those to be granted a <mark style="color:red;">token</mark> that will enable you to use the whole API. We are using [JsonWebToken](https://jwt.io) for managing those.
 {% endhint %}
+
+<details>
+
+<summary>Token Payload</summary>
+
+#### For the doctor :
+
+```json
+"doctor": {
+    "id": string,
+    "password": string,
+    "name": string,
+    "last_name": string,
+    "email": string,
+    "address": string
+ }
+```
+
+#### For the patient
+
+```json
+"patient": {
+    "id": string,
+    "password": string,
+    "name": string,
+    "last_name": string,
+    "email": string,
+    "age": int,
+    "height": int,
+    "weight": int,
+    "sex": string"
+ }
+```
+
+
+
+</details>
 
 ## Login
 
