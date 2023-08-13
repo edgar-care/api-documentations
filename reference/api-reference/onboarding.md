@@ -6,7 +6,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
 
 
 
-### Health
+### Health (In working)
 
 {% swagger method="post" path=" " baseUrl="/onboarding/health" summary="" %}
 {% swagger-description %}
@@ -19,6 +19,14 @@ The "onboarding" route is a streamlined process designed to gather essential use
 
 {% swagger-parameter in="body" name="Patientsillness" type="String" %}
 (optional)
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="Doctor" type="String" %}
+(optional) not working yet
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="Current treatments" type="String" %}
+(optional) not working yet
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
@@ -70,10 +78,3 @@ The "onboarding" route is a streamlined process designed to gather essential use
 {% endswagger-response %}
 {% endswagger %}
 
-
-
-{% swagger method="get" path="" baseUrl="" summary="" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-{% endswagger %}
