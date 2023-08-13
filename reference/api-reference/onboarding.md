@@ -25,7 +25,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
 (optional) not working yet
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="Current treatments" type="String" %}
+{% swagger-parameter in="body" name="Current treatments" type="[String]" %}
 (optional) not working yet
 {% endswagger-parameter %}
 
