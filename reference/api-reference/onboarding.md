@@ -8,7 +8,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
 
 ### Health
 
-{% swagger method="post" path="/" baseUrl="/onboarding/health" summary="" %}
+{% swagger method="post" path=" " baseUrl="/onboarding/health" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -32,7 +32,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
 
 ### Infos
 
-{% swagger method="post" path="/" baseUrl="/onboarding/infos" summary="" expanded="false" %}
+{% swagger method="post" path=" " baseUrl="/onboarding/infos" summary="" expanded="false" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -70,3 +70,10 @@ The "onboarding" route is a streamlined process designed to gather essential use
 {% endswagger-response %}
 {% endswagger %}
 
+
+
+{% swagger method="get" path="" baseUrl="" summary="" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
