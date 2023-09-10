@@ -21,7 +21,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
 (optional)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="patients_primary_doctor" type="String" %}
+{% swagger-parameter in="body" name="patients_primary_doctor" type="String" required="true" %}
 
 {% endswagger-parameter %}
 
@@ -57,7 +57,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
 (required)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="sexe" required="true" type="String" %}
+{% swagger-parameter in="body" name="sex" required="true" type="String" %}
 (required)
 {% endswagger-parameter %}
 
