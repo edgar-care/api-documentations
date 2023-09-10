@@ -13,11 +13,11 @@ The "onboarding" route is a streamlined process designed to gather essential use
 
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="Patientallergies" type="String" %}
+{% swagger-parameter in="body" name="patients_allergies" type="String" %}
 (optional)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="Patientsillness" type="String" %}
+{% swagger-parameter in="body" name="patients_illness" type="String" %}
 (optional)
 {% endswagger-parameter %}
 
@@ -45,27 +45,27 @@ The "onboarding" route is a streamlined process designed to gather essential use
 
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="Name" required="true" type="String" %}
+{% swagger-parameter in="body" name="name" required="true" type="String" %}
 (required)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="Surname" required="true" type="String" %}
+{% swagger-parameter in="body" name="surname" required="true" type="String" %}
 (required)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="Age" required="true" type="Int" %}
+{% swagger-parameter in="body" name="birthdate" required="true" type="Int" %}
 (required)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="Sexe" required="true" type="String" %}
+{% swagger-parameter in="body" name="sexe" required="true" type="String" %}
 (required)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="Weight" required="true" type="String" %}
+{% swagger-parameter in="body" name="weight" required="true" type="String" %}
 (required)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="Height" required="true" type="String" %}
+{% swagger-parameter in="body" name="height" required="true" type="String" %}
 (required)
 {% endswagger-parameter %}
 
