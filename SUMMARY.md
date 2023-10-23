@@ -11,3 +11,5 @@
   * [🩺 Doctor](reference/api-reference/doctor.md)
   * [🔠 Exam using NLP](reference/api-reference/exam-using-nlp.md)
   * [📃 Onboarding](reference/api-reference/onboarding.md)
+  * [🏥 Appointment](reference/api-reference/appointment.md)
+  * [📂 Medical File](reference/api-reference/medical-file.md)
