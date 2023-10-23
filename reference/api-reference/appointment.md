@@ -28,7 +28,7 @@
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="doctor/{id}/appointments " baseUrl="/" summary="" %}
+{% swagger method="get" path="doctor/{id}/appointments " baseUrl="/" summary="{id} => id Doctor" %}
 {% swagger-description %}
 
 {% endswagger-description %}
