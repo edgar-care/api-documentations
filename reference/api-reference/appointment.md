@@ -42,7 +42,7 @@
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="patient/appointments/{id} " baseUrl="/" summary="" %}
+{% swagger method="get" path="patient/appointments " baseUrl="/" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
