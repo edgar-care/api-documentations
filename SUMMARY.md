@@ -13,3 +13,5 @@
   * [📃 Onboarding](reference/api-reference/onboarding.md)
   * [🏥 Appointment](reference/api-reference/appointment.md)
   * [📂 Medical File](reference/api-reference/medical-file.md)
+  * [📃 Document](reference/api-reference/document.md)
+  * [📅 Slot](reference/api-reference/slot.md)
