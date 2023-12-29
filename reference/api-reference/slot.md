@@ -36,7 +36,7 @@
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger baseUrl="/" summary="" method="get" path="doctor/slot" %}
+{% swagger baseUrl="/" summary="" method="get" path="doctor/slots" %}
 {% swagger-description %}
 
 {% endswagger-description %}
