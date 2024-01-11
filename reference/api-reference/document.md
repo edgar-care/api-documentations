@@ -71,3 +71,17 @@ Execute the query to change the status. If true, the query will change to false 
 
 {% endswagger-response %}
 {% endswagger %}
+
+{% swagger baseUrl="/" summary="" method="delete" path="document/favorite/{id}" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="no documents in result" %}
+
+{% endswagger-response %}
+{% endswagger %}
