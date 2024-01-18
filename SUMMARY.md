@@ -16,3 +16,4 @@
   * [📂 Medical File](reference/api-reference/medical-file.md)
   * [📃 Document](reference/api-reference/document.md)
   * [📅 Appointment / Slot](reference/api-reference/appointment-slot.md)
+  * [🎛 Dashboard](reference/api-reference/dashboard.md)

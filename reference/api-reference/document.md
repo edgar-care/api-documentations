@@ -58,6 +58,38 @@ Execute the query to change the status. If true, the query will change to false 
 {% endswagger-response %}
 {% endswagger %}
 
+{% swagger baseUrl="/" summary="" method="get" path="document/download" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="no documents in result" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger baseUrl="/" summary="" method="put" path="document/{id}" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="name" required="true" type="String" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Unable to upload file" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
 {% swagger baseUrl="/" summary="" method="delete" path="document/{id}" %}
 {% swagger-description %}
 
