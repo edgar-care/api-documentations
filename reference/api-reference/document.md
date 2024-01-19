@@ -24,11 +24,11 @@ JPEG
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="category" type="String" required="true" %}
-
+GENERAL / FINANCE
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="documentType" type="String" required="true" %}
-
+XRAY, PRESCRIPTION, OTHER, CERTIFICATE
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
