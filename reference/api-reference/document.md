@@ -2,7 +2,17 @@
 
 {% swagger baseUrl="/" summary="" method="post" path="document/upload" %}
 {% swagger-description %}
+Fichier autoriser : \
+PDF\
+DOC
 
+DOCX\
+ODT
+
+ODTX
+
+PNG\
+JPEG
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="document" required="true" type="FIle" %}
