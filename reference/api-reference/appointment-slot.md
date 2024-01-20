@@ -64,22 +64,3 @@
 {% endswagger-response %}
 {% endswagger %}
 
-
-
-{% swagger method="delete" path="" baseUrl="/doctor/appointments/{id}" summary="Cancel an appointment" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="reason" required="true" %}
-Cancelation reason
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="" %}
-
-{% endswagger-response %}
-{% endswagger %}
