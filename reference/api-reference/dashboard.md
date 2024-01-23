@@ -159,3 +159,17 @@
 
 {% endswagger-response %}
 {% endswagger %}
+
+{% swagger baseUrl="/" summary="" method="delete" path="doctor/patient/{id}" %}
+{% swagger-description %}
+Suppression Patient Account.
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="no documents in result" %}
+
+{% endswagger-response %}
+{% endswagger %}
