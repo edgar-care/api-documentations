@@ -8,73 +8,49 @@ The "onboarding" route is a streamlined process designed to gather essential use
 
 ### Health (In working)
 
-{% swagger method="post" path=" " baseUrl="/onboarding/health" summary="" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `/onboarding/health`&#x20;
 
-{% endswagger-description %}
+#### Request Body
 
-{% swagger-parameter in="body" name="patients_allergies" type="String" %}
-(optional)
-{% endswagger-parameter %}
+| Name                                                        | Type      | Description |
+| ----------------------------------------------------------- | --------- | ----------- |
+| patients\_allergies                                         | String    | (optional)  |
+| patients\_illness                                           | String    | (optional)  |
+| patients\_primary\_doctor<mark style="color:red;">\*</mark> | String    |             |
+| patients\_treatments                                        | \[String] | (optional)  |
 
-{% swagger-parameter in="body" name="patients_illness" type="String" %}
-(optional)
-{% endswagger-parameter %}
+{% tabs %}
+{% tab title="200: OK " %}
 
-{% swagger-parameter in="body" name="patients_primary_doctor" type="String" required="true" %}
+{% endtab %}
 
-{% endswagger-parameter %}
+{% tab title="400: Bad Request Unable to get health (check if you share all information) " %}
 
-{% swagger-parameter in="body" name="patients_treatments" type="[String]" %}
-(optional)
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="Unable to get health (check if you share all information) " %}
-
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Infos
 
-{% swagger method="post" path=" " baseUrl="/onboarding/infos" summary="" expanded="false" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `/onboarding/infos`&#x20;
 
-{% endswagger-description %}
+#### Request Body
 
-{% swagger-parameter in="body" name="name" required="true" type="String" %}
-(required)
-{% endswagger-parameter %}
+| Name                                        | Type   | Description |
+| ------------------------------------------- | ------ | ----------- |
+| name<mark style="color:red;">\*</mark>      | String | (required)  |
+| surname<mark style="color:red;">\*</mark>   | String | (required)  |
+| birthdate<mark style="color:red;">\*</mark> | String | (required)  |
+| sex<mark style="color:red;">\*</mark>       | String | (required)  |
+| weight<mark style="color:red;">\*</mark>    | String | (required)  |
+| height<mark style="color:red;">\*</mark>    | String | (required)  |
 
-{% swagger-parameter in="body" name="surname" required="true" type="String" %}
-(required)
-{% endswagger-parameter %}
+{% tabs %}
+{% tab title="200: OK " %}
 
-{% swagger-parameter in="body" name="birthdate" required="true" type="String" %}
-(required)
-{% endswagger-parameter %}
+{% endtab %}
 
-{% swagger-parameter in="body" name="sex" required="true" type="String" %}
-(required)
-{% endswagger-parameter %}
+{% tab title="400: Bad Request Unable to get Info Health (check if you share all information)" %}
 
-{% swagger-parameter in="body" name="weight" required="true" type="String" %}
-(required)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="height" required="true" type="String" %}
-(required)
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="Unable to get Info Health (check if you share all information)" %}
-
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 

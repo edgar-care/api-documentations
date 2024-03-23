@@ -2,184 +2,168 @@
 
 ### Patient
 
-{% swagger method="post" path="appointments/{id} " baseUrl="/" summary="" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `/appointments/{id}`&#x20;
 
-{% endswagger-description %}
+{% tabs %}
+{% tab title="201: Created " %}
 
-{% swagger-response status="201: Created" description="" %}
+{% endtab %}
 
-{% endswagger-response %}
+{% tab title="400: Bad Request Unable to get health (check if you share all information) " %}
 
-{% swagger-response status="400: Bad Request" description="Unable to get health (check if you share all information) " %}
+{% endtab %}
+{% endtabs %}
 
-{% endswagger-response %}
-{% endswagger %}
+<mark style="color:blue;">`GET`</mark> `/patient/appointments/{id}`&#x20;
 
-{% swagger method="get" path="patient/appointments/{id} " baseUrl="/" summary="" %}
-{% swagger-description %}
+{% tabs %}
+{% tab title="201: Created " %}
 
-{% endswagger-description %}
+{% endtab %}
 
-{% swagger-response status="201: Created" description="" %}
+{% tab title="400: Bad Request Unable to get health (check if you share all information) " %}
 
-{% endswagger-response %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger-response status="400: Bad Request" description="Unable to get health (check if you share all information) " %}
+## {id} => id Doctor
 
-{% endswagger-response %}
-{% endswagger %}
+<mark style="color:blue;">`GET`</mark> `/doctor/{id}/appointments`&#x20;
 
-{% swagger method="get" path="doctor/{id}/appointments " baseUrl="/" summary="{id} => id Doctor" %}
-{% swagger-description %}
+{% tabs %}
+{% tab title="201: Created " %}
 
-{% endswagger-description %}
+{% endtab %}
 
-{% swagger-response status="201: Created" description="" %}
+{% tab title="400: Bad Request Unable to get health (check if you share all information) " %}
 
-{% endswagger-response %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger-response status="400: Bad Request" description="Unable to get health (check if you share all information) " %}
+<mark style="color:blue;">`GET`</mark> `/patient/appointments`&#x20;
 
-{% endswagger-response %}
-{% endswagger %}
+{% tabs %}
+{% tab title="201: Created " %}
 
-{% swagger method="get" path="patient/appointments " baseUrl="/" summary="" %}
-{% swagger-description %}
+{% endtab %}
 
-{% endswagger-description %}
+{% tab title="400: Bad Request Unable to get health (check if you share all information) " %}
 
-{% swagger-response status="201: Created" description="" %}
+{% endtab %}
+{% endtabs %}
 
-{% endswagger-response %}
+<mark style="color:red;">`DELETE`</mark> `/appointments/{id}`&#x20;
 
-{% swagger-response status="400: Bad Request" description="Unable to get health (check if you share all information) " %}
+{% tabs %}
+{% tab title="201: Created " %}
 
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
 
-{% swagger method="delete" path="appointments/{id} " baseUrl="/" summary="" %}
-{% swagger-description %}
+{% tab title="400: Bad Request Unable to get health (check if you share all information) " %}
 
-{% endswagger-description %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger-response status="201: Created" description="" %}
+<mark style="color:orange;">`PUT`</mark> `/appointments/{id}`&#x20;
 
-{% endswagger-response %}
+#### Request Body
 
-{% swagger-response status="400: Bad Request" description="Unable to get health (check if you share all information) " %}
+| Name                                 | Type   | Description |
+| ------------------------------------ | ------ | ----------- |
+| id<mark style="color:red;">\*</mark> | String |             |
 
-{% endswagger-response %}
-{% endswagger %}
+{% tabs %}
+{% tab title="201: Created " %}
 
-{% swagger method="put" path="appointments/{id} " baseUrl="/" summary="" %}
-{% swagger-description %}
+{% endtab %}
 
-{% endswagger-description %}
+{% tab title="400: Bad Request Unable to get health (check if you share all information) " %}
 
-{% swagger-parameter in="body" name="id" type="String" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="201: Created" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="Unable to get health (check if you share all information) " %}
-
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ***
 
 ### Doctor
 
-{% swagger method="post" path="doctor/appointments" baseUrl="/" summary="" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `/doctor/appointments`
 
-{% endswagger-description %}
+#### Request Body
 
-{% swagger-parameter in="body" name="id_patient" type="String" %}
+| Name                                          | Type      | Description |
+| --------------------------------------------- | --------- | ----------- |
+| id\_patient                                   | String    |             |
+| start\_date<mark style="color:red;">\*</mark> | Timestamp |             |
+| end\_date<mark style="color:red;">\*</mark>   | Timestamp |             |
 
-{% endswagger-parameter %}
+{% tabs %}
+{% tab title="201: Created " %}
 
-{% swagger-parameter in="body" name="start_date" required="true" type="Timestamp" %}
+{% endtab %}
 
-{% endswagger-parameter %}
+{% tab title="400: Bad Request " %}
 
-{% swagger-parameter in="body" name="end_date" required="true" type="Timestamp" %}
+{% endtab %}
+{% endtabs %}
 
-{% endswagger-parameter %}
+<mark style="color:blue;">`GET`</mark> `/doctor/appointments`
 
-{% swagger-response status="201: Created" description="" %}
+{% tabs %}
+{% tab title="201: Created " %}
 
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="" %}
+{% tab title="400: Bad Request " %}
 
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="get" path="doctor/appointments" baseUrl="/" summary="" %}
-{% swagger-description %}
+<mark style="color:blue;">`GET`</mark> `/doctor/appointments/{id}`
 
-{% endswagger-description %}
+{% tabs %}
+{% tab title="201: Created " %}
 
-{% swagger-response status="201: Created" description="" %}
+{% endtab %}
 
-{% endswagger-response %}
+{% tab title="400: Bad Request " %}
 
-{% swagger-response status="400: Bad Request" description="" %}
+{% endtab %}
+{% endtabs %}
 
-{% endswagger-response %}
-{% endswagger %}
+<mark style="color:orange;">`PUT`</mark> `/doctor/appointments/{id}`
 
-{% swagger method="get" path="doctor/appointments/{id}" baseUrl="/" summary="" %}
-{% swagger-description %}
+#### Request Body
 
-{% endswagger-description %}
+| Name                                 | Type   | Description |
+| ------------------------------------ | ------ | ----------- |
+| id<mark style="color:red;">\*</mark> | String |             |
 
-{% swagger-response status="201: Created" description="" %}
+{% tabs %}
+{% tab title="201: Created " %}
 
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="" %}
+{% tab title="400: Bad Request " %}
 
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="put" path="doctor/appointments/{id}" baseUrl="/" summary="" %}
-{% swagger-description %}
+## Cancel an appointment
 
-{% endswagger-description %}
+<mark style="color:red;">`DELETE`</mark> `/doctor/appointments/{id}`
 
-{% swagger-parameter in="body" name="id" type="String" required="true" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name                                     | Type   | Description        |
+| ---------------------------------------- | ------ | ------------------ |
+| reason<mark style="color:red;">\*</mark> | String | Cancelation reason |
 
-{% swagger-response status="201: Created" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="" %}
+{% tab title="400: Bad Request " %}
 
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="delete" path="" baseUrl="/doctor/appointments/{id}" summary="Cancel an appointment" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="reason" required="true" %}
-Cancelation reason
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="" %}
-
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
