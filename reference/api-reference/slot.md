@@ -60,6 +60,8 @@
 {% endtab %}
 {% endtabs %}
 
+\=========================================================================
+
 <mark style="color:blue;">`GET`</mark> `/doctor/slots`
 
 {% tabs %}
@@ -86,6 +88,8 @@
 
 {% endtab %}
 {% endtabs %}
+
+\=========================================================================
 
 <mark style="color:red;">`DELETE`</mark> `/doctor/slot/{id}`
 
