@@ -41,6 +41,53 @@ The "onboarding" route is a streamlined process designed to gather essential use
 
 {% tab title="Return 201" %}
 ```json
+{
+	"Medical-info": {
+		"antecedent_diseases": {
+			"antediseases": [
+				{
+					"AnteDisease": {
+						"id": "String",
+						"name": "String",
+						"chronicity": Int,
+						"surgery_ids": [
+							"String"
+						],
+						"symptoms": [
+							"String",
+						],
+						"treatment_ids": [
+							"String",
+						],
+						"still_relevant": Boolean
+					},
+					"Treatments": [
+						{
+							"id": "String",
+							"period": [
+								"ENUM"
+							],
+							"day": [
+								"ENUMDAY"
+							],
+							"quantity": Int,
+							"medicine_id": "String"
+						},
+					]
+				},
+			]
+		},
+		"birthdate": Int,
+		"firstname": "String",
+		"height": Int,
+		"id": "String",
+		"name": "String",
+		"onboarding_status": "DONE",
+		"primary_doctor_id": "String",
+		"sex": "ENUM",
+		"weight": Int
+	}
+}
 ```
 {% endtab %}
 {% endtabs %}
@@ -56,7 +103,53 @@ The "onboarding" route is a streamlined process designed to gather essential use
 
 {% tab title="Return 200" %}
 ```json
-// Some code
+{
+	"Medical-info": {
+		"antecedent_diseases": {
+			"antediseases": [
+				{
+					"AnteDisease": {
+						"id": "String",
+						"name": "String",
+						"chronicity": Int,
+						"surgery_ids": [
+							"String"
+						],
+						"symptoms": [
+							"String",
+						],
+						"treatment_ids": [
+							"String",
+						],
+						"still_relevant": Boolean
+					},
+					"Treatments": [
+						{
+							"id": "String",
+							"period": [
+								"ENUM"
+							],
+							"day": [
+								"ENUMDAY"
+							],
+							"quantity": Int,
+							"medicine_id": "String"
+						},
+					]
+				},
+			]
+		},
+		"birthdate": Int,
+		"firstname": "String",
+		"height": Int,
+		"id": "String",
+		"name": "String",
+		"onboarding_status": "DONE",
+		"primary_doctor_id": "String",
+		"sex": "ENUM",
+		"weight": Int
+	}
+}
 ```
 {% endtab %}
 {% endtabs %}
@@ -97,34 +190,50 @@ The "onboarding" route is a streamlined process designed to gather essential use
 {% tab title="Return 200" %}
 ```json
 {
-	"medifcal_folder": {
+	"Medical-info": {
+		"antecedent_diseases": {
+			"antediseases": [
+				{
+					"AnteDisease": {
+						"id": "String",
+						"name": "String",
+						"chronicity": Int,
+						"surgery_ids": [
+							"String"
+						],
+						"symptoms": [
+							"String",
+						],
+						"treatment_ids": [
+							"String",
+						],
+						"still_relevant": Boolean
+					},
+					"Treatments": [
+						{
+							"id": "String",
+							"period": [
+								"ENUM"
+							],
+							"day": [
+								"ENUMDAY"
+							],
+							"quantity": Int,
+							"medicine_id": "String"
+						},
+					]
+				},
+			]
+		},
+		"birthdate": Int,
+		"firstname": "String",
+		"height": Int,
 		"id": "String",
 		"name": "String",
-		"firstname": "String",
-		"birthdate": Int,
-		"sex": "ENUM",
-		"height": Int,
-		"weight": Int,
-		"primary_doctor_id": "test",
 		"onboarding_status": "DONE",
-		"medical_antecedents": [
-			{
-				"id": "String",
-				"name": "String",
-				"medicines": [
-					{
-						"period": [
-							"ENUM",
-						],
-						"day": [
-							"ENUM"
-						],
-						"quantity": Int
-					}
-				],
-				"still_relevant": Boolean
-			}
-		]
+		"primary_doctor_id": "String",
+		"sex": "ENUM",
+		"weight": Int
 	}
 }
 ```
