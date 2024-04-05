@@ -20,8 +20,8 @@ The "onboarding" route is a streamlined process designed to gather essential use
   "Sex": "ENUM",
   "Weight": Int,
   "Height": Int,
-  "PrimaryDoctorID": "String",
-  "MedicalAntecedents": [
+  "Primary_doctor_id": "String",
+  "Medical_antecedents": [
     {
       "Name": "String",
       "Medicines": [
@@ -29,10 +29,10 @@ The "onboarding" route is a streamlined process designed to gather essential use
           "Period": ["ENUM"],
           "Day": ["ENUM"],
           "Quantity": int,
-          "MedicineID": "String"
+          "Medicine_id": "String"
         },
       ],
-      "StillRelevant": Boolean
+      "Still_relevant": Boolean
     }
   ]
 }

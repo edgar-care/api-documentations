@@ -14,7 +14,16 @@
 {% endtab %}
 
 {% tab title="Return 201" %}
-
+```json
+{
+	"id": "String",
+	"treatment_id": "String",
+	"date": Int,
+	"period": [
+		"ENUM"
+	]
+}
+```
 {% endtab %}
 {% endtabs %}
 
@@ -26,7 +35,16 @@
 {% endtab %}
 
 {% tab title="Return 200" %}
-
+```json
+{
+	"id": "String",
+	"treatment_id": "String",
+	"date": Int,
+	"period": [
+		"ENUM"
+	]
+}
+```
 {% endtab %}
 {% endtabs %}
 
@@ -38,7 +56,16 @@
 {% endtab %}
 
 {% tab title="Return 200" %}
-
+```json
+{
+	"id": "String",
+	"treatment_id": "String",
+	"date": Int,
+	"period": [
+		"ENUM"
+	]
+},
+```
 {% endtab %}
 {% endtabs %}
 
@@ -50,6 +77,10 @@
 {% endtab %}
 
 {% tab title="Return 200" %}
-
+```json
+{
+	"delete": true
+}
+```
 {% endtab %}
 {% endtabs %}
