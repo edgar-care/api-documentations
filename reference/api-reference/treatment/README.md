@@ -1,4 +1,4 @@
-# 💊 Treatment
+# ⚕️ Treatment
 
 <mark style="color:green;">`POST`</mark> `/dashboard/treatment`
 

@@ -20,5 +20,6 @@
     * [✔️ Pre-Diagnostic](reference/api-reference/dashboard/pre-diagnostic.md)
     * [👨‍⚕️ Get information about doctor](reference/api-reference/dashboard/get-information-about-doctor.md)
     * [📄 Document](reference/api-reference/dashboard/document.md)
-  * [⚕️ Treatment](reference/api-reference/treatment.md)
+  * [⚕️ Treatment](reference/api-reference/treatment/README.md)
+    * [🗃️ Follow up treatment](reference/api-reference/treatment/follow-up-treatment.md)
   * [💊 Medicine](reference/api-reference/medicine.md)
