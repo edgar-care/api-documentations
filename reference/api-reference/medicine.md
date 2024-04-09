@@ -1,6 +1,6 @@
 # 💊 Medicine
 
-<mark style="color:green;">`POST`</mark> `/medicament`
+<mark style="color:green;">`POST`</mark> `/medicine`
 
 {% tabs %}
 {% tab title="Body" %}
@@ -39,7 +39,7 @@
 
 \=========================================================================
 
-<mark style="color:blue;">`GET`</mark> `/medicaments`
+<mark style="color:blue;">`GET`</mark> `/medicine`
 
 {% tabs %}
 {% tab title="No Body" %}
@@ -72,7 +72,7 @@
 
 \=========================================================================
 
-<mark style="color:blue;">`GET`</mark> `/medicament/{id}`
+<mark style="color:blue;">`GET`</mark> `/medicine/{id}`
 
 {% tabs %}
 {% tab title="No body" %}
