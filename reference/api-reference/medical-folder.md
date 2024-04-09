@@ -24,7 +24,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
   "Medical_antecedents": [
     {
       "Name": "String",
-      "Medicines": [
+      "treatments": [
         {
           "Period": ["ENUM"],
           "Day": ["ENUM"],
@@ -172,7 +172,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
   "medical_antecedents": [
     {
       "name": "String",
-      "medicines": [
+      "treatments": [
         {
           "period": ["ENUM"],
           "day": ["ENUM"],
