@@ -1,6 +1,6 @@
 # ✔️ Pre-Diagnostic
 
-<mark style="color:green;">`POST`</mark> `/dashboard/medical-info`
+<mark style="color:green;">`POST`</mark> `/doctor/diagnostic/{id}`
 
 {% tabs %}
 {% tab title="Body" %}
