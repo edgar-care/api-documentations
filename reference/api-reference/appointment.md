@@ -5,8 +5,29 @@
 <mark style="color:green;">`POST`</mark> `/appointments/{id}`&#x20;
 
 {% tabs %}
-{% tab title="201: Created " %}
+{% tab title="Body" %}
+```json
+{
+    "session_id": String
+}
+```
+{% endtab %}
 
+{% tab title="201: Created " %}
+```json
+{
+	"rdv": {
+		"id": "String",
+		"doctor_id": "String",
+		"id_patient": "String",
+		"start_date": Int,
+		"end_date": Int,
+		"cancelation_reason": "",
+		"appointment_status": "WAITING_FOR_REVIEW",
+		"session_id": "String"
+	}
+}
+```
 {% endtab %}
 
 {% tab title="400: Bad Request Unable to get health (check if you share all information) " %}
@@ -167,3 +188,19 @@
 
 {% endtab %}
 {% endtabs %}
+
+### Status appointment
+
+|                                                     |   |   |
+| --------------------------------------------------- | - | - |
+| <p></p><pre><code>WAITING_FOR_REVIEW,
+</code></pre> |   |   |
+| <pre><code>ACCEPTED_DUE_TO_REVIEW
+</code></pre>     |   |   |
+| <pre><code>CANCELED_DUE_TO_REVIEW
+</code></pre>     |   |   |
+| <pre><code>CANCELED
+</code></pre>                   |   |   |
+| <pre><code>OPENED
+</code></pre>                     |   |   |
+|                                                     |   |   |
