@@ -39,6 +39,21 @@ The "onboarding" route is a streamlined process designed to gather essential use
 ```
 {% endtab %}
 
+{% tab title="Body with no medical antecedent" %}
+```json
+{
+  "Name": "String",
+  "Firstname": "String",
+  "Birthdate": Int,
+  "Sex": "ENUM",
+  "Weight": Int,
+  "Height": Int,
+  "Primary_doctor_id": "String",
+  "Medical_antecedents": []
+}
+```
+{% endtab %}
+
 {% tab title="Return 201" %}
 ```json
 {
