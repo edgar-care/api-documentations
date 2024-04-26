@@ -84,7 +84,110 @@
 
 {% tabs %}
 {% tab title="200: OK " %}
-
+```json
+{
+	"patients": [
+		{
+			"document_ids": null,
+			"email": String,
+			"id": String,
+			"medical_folder": {
+				"birthdate": Int,
+				"firstname": String,
+				"height": Int,
+				"id": String,
+				"medical_antecedents": [
+					{
+						"id": String,
+						"medicines": [
+							{
+								"day": [
+									ENUM
+								],
+								"id": String,
+								"medicine_id": String,
+								"period": [
+									ENUM
+								],
+								"quantity": Int
+							},
+							{
+								"day": [
+									ENUM
+								],
+								"id": String,
+								"medicine_id": String,
+								"period": [
+									ENUM
+								],
+								"quantity": Int
+							}
+						],
+						"name": String,
+						"still_relevant": Boolean
+					},
+				],
+				"name": String,
+				"onboarding_status": String,
+				"primary_doctor_id": String,
+				"sex": String,
+				"weight": Int
+			},
+			"rendez_vous_ids": null,
+			"treatment_follow_up_ids": null
+		},
+		{
+			"document_ids": null,
+			"email": String,
+			"id": String,
+			"medical_folder": {
+				"birthdate": Int,
+				"firstname": String,
+				"height": Int,
+				"id": String,
+				"medical_antecedents": [
+					{
+						"id": String,
+						"medicines": [
+							{
+								"day": [
+									ENUM
+								],
+								"id": String,
+								"medicine_id": String,
+								"period": [
+									ENUM
+								],
+								"quantity": Int
+							},
+							{
+								"day": [
+									ENUM
+								],
+								"id": String,
+								"medicine_id": String,
+								"period": [
+									ENUM
+								],
+								"quantity": Int
+							}
+						],
+						"name": String,
+						"still_relevant": Boolean
+					},
+				],
+				"name": String,
+				"onboarding_status": String,
+				"primary_doctor_id": String,
+				"sex": String,
+				"weight": Int
+			},
+			"rendez_vous_ids": null,
+			"treatment_follow_up_ids": null
+		},
+	]
+}
+```
 {% endtab %}
 
 {% tab title="400: Bad Request no documents in result" %}
