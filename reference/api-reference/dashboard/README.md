@@ -4,36 +4,75 @@
 
 {% tabs %}
 {% tab title="200: OK " %}
-{% tabs %}
-{% tab title="example" %}
 ```json
 {
-	"onboarding_health": {
-		"id": "string",
-		"patients_allergies": ["string", "string"],
-		"patients_illness": ["string"],
-		"patients_treatments": ["string"],
-		"patients_primary_doctor": "string"
+	"document_ids": null,
+	"email": String,
+	"id": String,
+	"medical_folder": {
+		"birthdate": Int,
+		"firstname": String,
+		"height": Int,
+		"id": String,
+		"medical_antecedents": [
+			{
+				"id": String,
+				"medicines": [
+					{
+						"day": [
+							ENUM
+						],
+						"id": String,
+						"medicine_id": String,
+						"period": [
+							ENUM
+						],
+						"quantity": Int
+					},
+					{
+						"day": [
+							ENUM
+						],
+						"id": String,
+						"medicine_id": String,
+						"period": [
+							ENUM
+						],
+						"quantity": Int
+					}
+				],
+				"name": String,
+				"still_relevant": Boolean
+			},
+			{
+				"id": String,
+				"medicines": [
+					{
+						"day": [
+							ENUM						"SUNDAY"
+						],
+						"id": String,
+						"medicine_id": String,
+						"period": [
+							ENUM							"NOON"
+						],
+						"quantity": Int
+					}
+				],
+				"name": String,
+				"still_relevant": Boolean
+			}
+		],
+		"name": String,
+		"onboarding_status": String,
+		"primary_doctor_id": String,
+		"sex": String,
+		"weight": Int
 	},
-	"onboarding_info": {
-		"id": "string",
-		"name": "string",
-		"surname": "string",
-		"birthdate": "string",
-		"sex": "MALE",
-		"weight": int,
-		"height": int
-	},
-	"patient": {
-		"id": "string",
-		"onboarding_info_id": "string",
-		"onboarding_health_id": "string",
-		"email": "string"
-	}
+	"rendez_vous_ids": null,
+	"treatment_follow_up_ids": null
 }
 ```
-{% endtab %}
-{% endtabs %}
 {% endtab %}
 
 {% tab title="400: Bad Request no documents in result" %}
