@@ -1,80 +1,88 @@
-# 👨⚕ Diagnostic
+# 👨‍⚕️ Diagnostic
 
 
 
-{% swagger method="post" path="" baseUrl="/diagnostic/initiate" summary="Initiate a session and returns a sessionId" %}
-{% swagger-description %}
+## Initiate a session and returns a sessionId
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `/diagnostic/initiate`
 
-{% swagger-response status="200: OK" description="The session has been created" %}
+{% tabs %}
+{% tab title="200: OK The session has been created" %}
 ```json
 {
     "sessionId": "string"
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="" baseUrl="/diagnostic/diagnose" summary="Takes what the patient said and returns the next question" %}
-{% swagger-description %}
+## Takes what the patient said and returns the next question
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `/diagnostic/diagnose`
 
-{% swagger-parameter in="body" name="id" required="true" %}
-session's Id from /initiate
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="sentence" required="true" %}
-Patient's sentence wrote in chat
-{% endswagger-parameter %}
+| Name                                       | Type   | Description                      |
+| ------------------------------------------ | ------ | -------------------------------- |
+| id<mark style="color:red;">\*</mark>       | String | session's Id from /initiate      |
+| sentence<mark style="color:red;">\*</mark> | String | Patient's sentence wrote in chat |
 
-{% swagger-response status="200: OK" description="The diagnostic step has succeeded" %}
+{% tabs %}
+{% tab title="200: OK The diagnostic step has succeeded" %}
 ```json
 {
     "done": bool, // true if simulation is finished
     "question": "string" // next question to ask to the patient
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="The diagnostic step has failed" %}
+{% tab title="400: Bad Request The diagnostic step has failed" %}
 ```
 {
     "message": "string"
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="get" path="" baseUrl="/diagnostic/summary/{id}" summary="Retrieve the summary of a session" %}
-{% swagger-description %}
+## Retrieve the summary of a session
 
-{% endswagger-description %}
+<mark style="color:blue;">`GET`</mark> `/diagnostic/summary/{id}`
 
-{% swagger-parameter in="path" name="id" type="String" required="true" %}
-Session Id
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-response status="200: OK" description="The session's summary has been retrieved" %}
+| Name                                 | Type   | Description |
+| ------------------------------------ | ------ | ----------- |
+| id<mark style="color:red;">\*</mark> | String | Session Id  |
+
+{% tabs %}
+{% tab title="200: OK The session's summary has been retrieved" %}
 ```
 {
-    "sessionId": "string",
-    "symptoms": [{"symptom": "string", "present": boolean|null}],
-    "age": int,
-    "height": int,
-    "weight": int,
-    "sex": "MALE"|"FEMALE"|"OTHER",
+    "session_id": "string",
+    "diseases": [{"name": "string", "presence": float}]
+    "fiability": float,
+    "symptoms": [{"symptom": "string", "present": boolean|null, "duration": int|null, "treated": ["string"]}],
+    "alert": [{
+        "id": "string",
+        "name": "string",
+        "sex": "string"|null,
+        "height": int|null,
+        "weight": int|null,
+        "symptoms": ["string"],
+        "comment": "string"
+    }]
     "logs": [{"question": "string", "answer": "string"}]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="The session's summary could not be retrieved" %}
+{% tab title="400: Bad Request The session's summary could not be retrieved" %}
 ```
 {
     "message": "string"
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
