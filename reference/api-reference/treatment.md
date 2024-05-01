@@ -86,21 +86,28 @@
 
 {% tab title="Return 200" %}
 ```json
-{
-	"treatments": [
-		{
-			"id": "String",
-			"period": [
-				"ENUM"
-			],
-			"day": [
-				"ENUM"
-			],
-			"quantity": Int,
-			"medicine_id": "String"
+[
+	{
+		"antedisease": {
+			"id": String,
+			"name": String,
+			"chronicity": Int,
+			"still_relevant": Boolean
 		},
-	]
-}
+		"treatments": [
+			{
+				"id": String,
+				"period": [
+					ENUM
+				],
+				"day": [
+					ENUM
+				],
+				"quantity": int,
+				"medicine_id": String
+			}
+		]
+	},
 ```
 {% endtab %}
 {% endtabs %}
