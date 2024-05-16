@@ -2,6 +2,8 @@
 
 <mark style="color:green;">`POST`</mark> `/doctor/diagnostic/{id}`
 
+Validation ou non du pre diagnostic du patient depuis le docteur
+
 {% tabs %}
 {% tab title="Body" %}
 ```json
@@ -31,7 +33,9 @@
 {% endtab %}
 {% endtabs %}
 
-<mark style="color:blue;">`GET`</mark>` ``/doctor/diagnostic/waiting`
+<mark style="color:blue;">`GET`</mark>`/doctor/diagnostic/waiting`
+
+Récuperation de tous les diagnostic en attende de validation ou non
 
 {% tabs %}
 {% tab title="Body" %}

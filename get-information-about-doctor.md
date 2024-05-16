@@ -2,6 +2,8 @@
 
 <mark style="color:blue;">`GET`</mark>` ``/doctors`
 
+Récupération de tous les docteur présent dans la base de donnée d'edgar
+
 {% tabs %}
 {% tab title="Body" %}
 No Body
@@ -30,6 +32,8 @@ No Body
 {% endtabs %}
 
 <mark style="color:blue;">`GET`</mark>` ``/doctor/{id}`
+
+Récupération d'un seul docteur
 
 {% tabs %}
 {% tab title="Body" %}

@@ -1,3 +1,9 @@
+---
+description: >-
+  Permettre au doctor d'upload des documents dans la base du patient, mais aussi
+  de récupérer des documents.
+---
+
 # 📄 Document
 
 <mark style="color:green;">`POST`</mark> `/doctor/document/upload`

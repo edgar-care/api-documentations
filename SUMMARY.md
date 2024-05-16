@@ -9,17 +9,27 @@
   * [🔓 Authentication](reference/api-reference/authentication.md)
   * [👤 Patient](reference/api-reference/patient.md)
   * [🩺 Doctor](reference/api-reference/doctor.md)
-  * [👨‍⚕️ Diagnostic](reference/api-reference/diagnostic.md)
-  * [📃 Medical Folder](reference/api-reference/medical-folder.md)
-  * [🏥 Appointment](reference/api-reference/appointment.md)
-  * [📂 Medical File](reference/api-reference/medical-file.md)
-  * [📃 Document](reference/api-reference/document/README.md)
-    * [📃 Upload Document from doctor](reference/api-reference/document/upload-document-from-doctor.md)
-  * [📅 Slot](reference/api-reference/slot.md)
-  * [🎛️ Dashboard](reference/api-reference/dashboard/README.md)
-    * [✔️ Pre-Diagnostic](reference/api-reference/dashboard/pre-diagnostic.md)
-    * [👨‍⚕️ Get information about doctor](reference/api-reference/dashboard/get-information-about-doctor.md)
-    * [📄 Document](reference/api-reference/dashboard/document.md)
-  * [⚕️ Treatment](reference/api-reference/treatment.md)
-    * [🗃️ Follow up treatment](reference/api-reference/treatment/follow-up-treatment.md)
-  * [💊 Medicine](reference/api-reference/medicine.md)
+
+## Group 1
+
+* [Patient](group-1/patient/README.md)
+  * [📃 Medical Folder](group-1/patient/medical-folder.md)
+  * [🏥 Appointment](group-1/patient/appointment.md)
+  * [⚕️ Treatment](group-1/patient/treatment.md)
+  * [🗃️ Follow up treatment](group-1/patient/follow-up-treatment.md)
+  * [📃 Document](group-1/patient/document.md)
+
+***
+
+* [👨‍⚕️ Diagnostic](diagnostic.md)
+* [💊 Medicine](medicine.md)
+* [👨‍⚕️ Get information about doctor](get-information-about-doctor.md)
+
+## Group 2
+
+* [Doctor](group-2/doctor/README.md)
+  * [🎛️ Dashboard](group-2/doctor/dashboard/README.md)
+    * [✔️ Pre-Diagnostic](group-2/doctor/dashboard/pre-diagnostic.md)
+    * [📄 Document](group-2/doctor/dashboard/document.md)
+    * [📋 Dashboard](group-2/doctor/dashboard/dashboard.md)
+  * [📅 Slot](group-2/doctor/slot.md)

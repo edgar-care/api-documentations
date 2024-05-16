@@ -1,9 +1,31 @@
-# 🎛️ Dashboard
+# 📋 Dashboard
+
+
+
+ENUM
+
+| DAY       | PERIOD  |
+| --------- | ------- |
+| MONDAY    | MORNING |
+| TUESDAY   | NOON    |
+| WEDNESDAY | EVENING |
+| THURSDAY  | NIGHT   |
+| FRIDAY    |         |
+| SATURDAY  |         |
+| SUNDAY    |         |
+
+
+
+Recuperer un patient assiocier au dit docteur
 
 <mark style="color:blue;">`GET`</mark> `/doctor/patient/{id}`
 
 {% tabs %}
-{% tab title="200: OK " %}
+{% tab title="No body" %}
+
+{% endtab %}
+
+{% tab title="Body return" %}
 ```json
 {
 	"document_ids": null,
@@ -29,39 +51,10 @@
 						],
 						"quantity": Int
 					},
-					{
-						"day": [
-							ENUM
-						],
-						"id": String,
-						"medicine_id": String,
-						"period": [
-							ENUM
-						],
-						"quantity": Int
-					}
 				],
 				"name": String,
 				"still_relevant": Boolean
 			},
-			{
-				"id": String,
-				"medicines": [
-					{
-						"day": [
-							ENUM						"SUNDAY"
-						],
-						"id": String,
-						"medicine_id": String,
-						"period": [
-							ENUM							"NOON"
-						],
-						"quantity": Int
-					}
-				],
-				"name": String,
-				"still_relevant": Boolean
-			}
 		],
 		"name": String,
 		"onboarding_status": String,
@@ -74,16 +67,20 @@
 }
 ```
 {% endtab %}
-
-{% tab title="400: Bad Request no documents in result" %}
-
-{% endtab %}
 {% endtabs %}
+
+
+
+Récuprer tous les patients associer au dit docteur
 
 <mark style="color:blue;">`GET`</mark> `/doctor/patients`
 
 {% tabs %}
-{% tab title="200: OK " %}
+{% tab title="No body" %}
+
+{% endtab %}
+
+{% tab title="Body return" %}
 ```json
 {
 	"patients": [
@@ -111,66 +108,6 @@
 								],
 								"quantity": Int
 							},
-							{
-								"day": [
-									ENUM
-								],
-								"id": String,
-								"medicine_id": String,
-								"period": [
-									ENUM
-								],
-								"quantity": Int
-							}
-						],
-						"name": String,
-						"still_relevant": Boolean
-					},
-				],
-				"name": String,
-				"onboarding_status": String,
-				"primary_doctor_id": String,
-				"sex": String,
-				"weight": Int
-			},
-			"rendez_vous_ids": null,
-			"treatment_follow_up_ids": null
-		},
-		{
-			"document_ids": null,
-			"email": String,
-			"id": String,
-			"medical_folder": {
-				"birthdate": Int,
-				"firstname": String,
-				"height": Int,
-				"id": String,
-				"medical_antecedents": [
-					{
-						"id": String,
-						"medicines": [
-							{
-								"day": [
-									ENUM
-								],
-								"id": String,
-								"medicine_id": String,
-								"period": [
-									ENUM
-								],
-								"quantity": Int
-							},
-							{
-								"day": [
-									ENUM
-								],
-								"id": String,
-								"medicine_id": String,
-								"period": [
-									ENUM
-								],
-								"quantity": Int
-							}
 						],
 						"name": String,
 						"still_relevant": Boolean
@@ -189,19 +126,17 @@
 }
 ```
 {% endtab %}
-
-{% tab title="400: Bad Request no documents in result" %}
-
-{% endtab %}
 {% endtabs %}
 
-<mark style="color:orange;">`PUT`</mark> `/doctor/patient/{id}`
 
-#### Request Body
+
+Modifier les informations du patient
+
+<mark style="color:orange;">`PUT`</mark> `/doctor/patient/{id}`&#x20;
 
 {% tabs %}
 {% tab title="Body" %}
-```
+```json
 {
 	"name": "pierre",
 	"firstname": "paul",
@@ -228,8 +163,8 @@
 ```
 {% endtab %}
 
-{% tab title="Return body" %}
-```
+{% tab title="Body return" %}
+```json
 {
 	"MedicalFolder": {
 		"id": "65ef682a99bdff9429cf9884",
@@ -265,11 +200,15 @@
 {% endtab %}
 {% endtabs %}
 
+
+
+Creation d'un nouveau patient depuis un docteur
+
 <mark style="color:green;">`POST`</mark> `/doctor/patient`
 
 {% tabs %}
 {% tab title="Body" %}
-```
+```json
 {
 	"email": "testreturn@gmail.com",
 	"medical_info": {
@@ -317,8 +256,8 @@
 ```
 {% endtab %}
 
-{% tab title="Return body" %}
-```
+{% tab title="Body return" %}
+```json
 {
 	"medical_folder": {
 		"birthdate": 12,
@@ -389,16 +328,9 @@
 {% endtab %}
 {% endtabs %}
 
-<mark style="color:red;">`DELETE`</mark> `/doctor/patient/{id}`
+
 
 Suppression Patient Account.
 
-{% tabs %}
-{% tab title="200: OK " %}
+<mark style="color:red;">`DELETE`</mark> `/doctor/patient/{id}`
 
-{% endtab %}
-
-{% tab title="400: Bad Request no documents in result" %}
-
-{% endtab %}
-{% endtabs %}
