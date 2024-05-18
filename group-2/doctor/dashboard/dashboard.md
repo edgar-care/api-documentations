@@ -206,6 +206,8 @@ Creation d'un nouveau patient depuis un docteur
 
 <mark style="color:green;">`POST`</mark> `/doctor/patient`
 
+Si le patient existe deja, cela edit juste le patient
+
 {% tabs %}
 {% tab title="Body" %}
 ```json

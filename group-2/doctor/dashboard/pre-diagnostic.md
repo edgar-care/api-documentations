@@ -55,6 +55,34 @@ no body
 			"cancelation_reason": "String",
 			"appointment_status": "WAITING_FOR_REVIEW",
 			"session_id": "String"
+			"diseases": null,
+			"fiability": 0.42,
+			"symptoms": [
+			{
+				"name": "String",
+				"presence": Boolean,
+				"duration": int
+			},
+			],
+			"logs":[
+			{
+				"question": "describe symptoms",
+				"answer": "gorge et éternuements et fatigue"
+			}
+			],
+			"alerts":[
+			{
+				"id": "String",
+				"name": "string",
+				"sex": "string",
+				"height": int,
+				"weight": int,
+				"symptoms": [
+					"string"
+				],
+				"comment": "string"
+			}
+		]
 		}
 	]
 }
