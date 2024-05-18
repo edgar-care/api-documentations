@@ -1,5 +1,7 @@
 # 🗃️ Follow up treatment
 
+Cocher un treatment qui a été pris
+
 <mark style="color:green;">`POST`</mark> `/dashboard/treatment/follow-up`
 
 {% tabs %}
@@ -27,6 +29,8 @@
 {% endtab %}
 {% endtabs %}
 
+Récupérer un traitment qui a été pris (cocher)
+
 <mark style="color:blue;">`GET`</mark> `/dashboard/treatment/follow-up/{id}`
 
 {% tabs %}
@@ -47,6 +51,8 @@
 ```
 {% endtab %}
 {% endtabs %}
+
+Récupérer tous les tratitements qui on été pris (cocher)
 
 <mark style="color:blue;">`GET`</mark> `/dashboard/treatment/follow-up`
 
@@ -69,7 +75,7 @@
 {% endtab %}
 {% endtabs %}
 
-<mark style="color:red;">`DELETE`</mark> `/dashboard/treatment/follow-up/{id}`
+Décocher un traitement qui a été pris\ <mark style="color:red;">`DELETE`</mark> `/dashboard/treatment/follow-up/{id}`
 
 {% tabs %}
 {% tab title="No Body" %}
