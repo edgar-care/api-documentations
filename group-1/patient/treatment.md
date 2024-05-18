@@ -114,7 +114,7 @@
 
 \=========================================================================
 
-<mark style="color:orange;">`PUT`</mark> `/dashboard/treatment/{id}`
+<mark style="color:orange;">`PUT`</mark> `/dashboard/treatment`
 
 {% tabs %}
 {% tab title="Body" %}
