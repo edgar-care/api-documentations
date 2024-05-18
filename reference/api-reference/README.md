@@ -16,8 +16,8 @@ Everything related to authentication :
 
 ## Patients
 
-{% content-ref url="patient.md" %}
-[patient.md](patient.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Doctors
