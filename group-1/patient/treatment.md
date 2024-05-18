@@ -6,8 +6,8 @@
 {% tab title="Body" %}
 ```
 {
-  "name": "String",
-  "disease_id": "String", #Not necessary
+  "name": "String",       # a renseigner dans le cas ou la maladie n'existe pas
+  "disease_id": "String", # a renseigner lorsque l'on veut rajouter un treatement a une maladie deja existante
   "still_relevant": Boolean,
   "treatments": [
     {
