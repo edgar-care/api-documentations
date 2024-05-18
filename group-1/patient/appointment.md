@@ -85,17 +85,17 @@
 {% endtab %}
 {% endtabs %}
 
-<mark style="color:orange;">`PUT`</mark> `/appointments/{id}`&#x20;
+<mark style="color:orange;">`PUT`</mark> `/appointments/{id} #id de l'ancien rendez vous`
 
 #### Request Body
 
-| Name                                 | Type   | Description |
-| ------------------------------------ | ------ | ----------- |
-| id<mark style="color:red;">\*</mark> | String |             |
-
 {% tabs %}
-{% tab title="201: Created " %}
-
+{% tab title="Body " %}
+```
+{
+    "id": "string"     #id du nouveau rendez vous 
+}
+```
 {% endtab %}
 
 {% tab title="400: Bad Request Unable to get health (check if you share all information) " %}

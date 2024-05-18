@@ -148,7 +148,7 @@ Modifier les informations du patient
 	"medical_antecedents": [
 		{
 			"name": "Parasetamole",
-			"medicines": [
+			"medicines": [ 	# ceci est le treatment
 				{
 					"period": ["MORNING"],
 					"day": ["MONDAY"],
