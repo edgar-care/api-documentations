@@ -19,6 +19,7 @@
 
 ***
 
+* [🗣️ Chat](chat.md)
 * [👨‍⚕️ Diagnostic](diagnostic.md)
 * [💊 Medicine](medicine.md)
 * [👨‍⚕️ Get information about doctor](get-information-about-doctor.md)
