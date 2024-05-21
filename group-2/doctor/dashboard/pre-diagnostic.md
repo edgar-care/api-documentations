@@ -10,7 +10,7 @@ Validation ou non du pre diagnostic du patient depuis le docteur
 {
 	"reason": "String",
 	"validation": Boolean,
-	"health_methode": "String"
+	"health_method": "String"
 }
 ```
 {% endtab %}
