@@ -9,7 +9,7 @@ Validation ou non du pre diagnostic du patient depuis le docteur
 ```json
 {
 	"reason": "String",
-	"validation": Boolean
+	"validation": Boolean,
 	"health_methode": "String"
 }
 ```
