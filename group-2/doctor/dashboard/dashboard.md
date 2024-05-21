@@ -134,6 +134,8 @@ Modifier les informations du patient
 
 <mark style="color:orange;">`PUT`</mark> `/doctor/patient/{id}`&#x20;
 
+Attention, si la maladie ou le traitement n'est pas renseignée, elle sera supprimée en base de donnée
+
 {% tabs %}
 {% tab title="Body" %}
 ```json
