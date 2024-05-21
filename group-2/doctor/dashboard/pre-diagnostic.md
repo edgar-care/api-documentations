@@ -10,6 +10,7 @@ Validation ou non du pre diagnostic du patient depuis le docteur
 {
 	"reason": "String",
 	"validation": Boolean
+	"health_methode": "String"
 }
 ```
 {% endtab %}
@@ -27,6 +28,7 @@ Validation ou non du pre diagnostic du patient depuis le docteur
 		"appointment_status": "ENUM", 
 // ENUM : CANCELED_DUE_TO_REVIEW OR ACCEPTED_DUE_TO_REVIEW //
 		"session_id": "String"
+		"health_method": "String"
 	}
 }
 ```
