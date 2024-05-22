@@ -1,7 +1,7 @@
 # 📃 Document
 
-{% swagger baseUrl="/" summary="" method="post" path="document/upload" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `/document/upload`
+
 Fichier autoriser : \
 PDF\
 DOC
@@ -11,119 +11,103 @@ ODT
 
 ODTX
 
-PNG\
-JPEG
-{% endswagger-description %}
+PNG
 
-{% swagger-parameter in="body" name="document" required="true" type="FIle" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name                                           | Type    | Description                            |
+| ---------------------------------------------- | ------- | -------------------------------------- |
+| document<mark style="color:red;">\*</mark>     | FIle    |                                        |
+| isFavorite<mark style="color:red;">\*</mark>   | Boolean |                                        |
+| category<mark style="color:red;">\*</mark>     | String  | GENERAL / FINANCE                      |
+| documentType<mark style="color:red;">\*</mark> | String  | XRAY, PRESCRIPTION, OTHER, CERTIFICATE |
 
-{% swagger-parameter in="body" name="isFavorite" type="Boolean" required="true" %}
+{% tabs %}
+{% tab title="200: OK " %}
 
-{% endswagger-parameter %}
+{% endtab %}
 
-{% swagger-parameter in="body" name="category" type="String" required="true" %}
-GENERAL / FINANCE
-{% endswagger-parameter %}
+{% tab title="400: Bad Request Unable to upload file" %}
 
-{% swagger-parameter in="body" name="documentType" type="String" required="true" %}
-XRAY, PRESCRIPTION, OTHER, CERTIFICATE
-{% endswagger-parameter %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger-response status="200: OK" description="" %}
+<mark style="color:green;">`POST`</mark> `/document/favorite/{id}`
 
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="Unable to upload file" %}
-
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger baseUrl="/" summary="" method="post" path="document/favorite/{id}" %}
-{% swagger-description %}
 Execute the query to change the status. If true, the query will change to false and vice versa.
-{% endswagger-description %}
 
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="no documents in result" %}
+{% tab title="400: Bad Request no documents in result" %}
 
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="/" summary="" method="get" path="document/download/{id}" %}
-{% swagger-description %}
+<mark style="color:blue;">`GET`</mark> `/document/download/{id}`
 
-{% endswagger-description %}
+{% tabs %}
+{% tab title="200: OK " %}
 
-{% swagger-response status="200: OK" description="" %}
+{% endtab %}
 
-{% endswagger-response %}
+{% tab title="400: Bad Request no documents in result" %}
 
-{% swagger-response status="400: Bad Request" description="no documents in result" %}
+{% endtab %}
+{% endtabs %}
 
-{% endswagger-response %}
-{% endswagger %}
+<mark style="color:blue;">`GET`</mark> `/document/download`
 
-{% swagger baseUrl="/" summary="" method="get" path="document/download" %}
-{% swagger-description %}
+{% tabs %}
+{% tab title="200: OK " %}
 
-{% endswagger-description %}
+{% endtab %}
 
-{% swagger-response status="200: OK" description="" %}
+{% tab title="400: Bad Request no documents in result" %}
 
-{% endswagger-response %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger-response status="400: Bad Request" description="no documents in result" %}
+<mark style="color:orange;">`PUT`</mark> `/document/{id}`
 
-{% endswagger-response %}
-{% endswagger %}
+#### Request Body
 
-{% swagger baseUrl="/" summary="" method="put" path="document/{id}" %}
-{% swagger-description %}
+| Name                                   | Type   | Description |
+| -------------------------------------- | ------ | ----------- |
+| name<mark style="color:red;">\*</mark> | String |             |
 
-{% endswagger-description %}
+{% tabs %}
+{% tab title="200: OK " %}
 
-{% swagger-parameter in="body" name="name" required="true" type="String" %}
+{% endtab %}
 
-{% endswagger-parameter %}
+{% tab title="400: Bad Request Unable to upload file" %}
 
-{% swagger-response status="200: OK" description="" %}
+{% endtab %}
+{% endtabs %}
 
-{% endswagger-response %}
+<mark style="color:red;">`DELETE`</mark> `/document/{id}`
 
-{% swagger-response status="400: Bad Request" description="Unable to upload file" %}
+{% tabs %}
+{% tab title="200: OK " %}
 
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
 
-{% swagger baseUrl="/" summary="" method="delete" path="document/{id}" %}
-{% swagger-description %}
+{% tab title="400: Bad Request no documents in result" %}
 
-{% endswagger-description %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger-response status="200: OK" description="" %}
+<mark style="color:red;">`DELETE`</mark> `/document/favorite/{id}`
 
-{% endswagger-response %}
+{% tabs %}
+{% tab title="200: OK " %}
 
-{% swagger-response status="400: Bad Request" description="no documents in result" %}
+{% endtab %}
 
-{% endswagger-response %}
-{% endswagger %}
+{% tab title="400: Bad Request no documents in result" %}
 
-{% swagger baseUrl="/" summary="" method="delete" path="document/favorite/{id}" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="no documents in result" %}
-
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
