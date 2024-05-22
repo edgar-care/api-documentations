@@ -55,10 +55,52 @@ Keep in mind that you have to use one of those to be granted a <mark style="colo
 
 ## Register
 
-{% swagger src="https://raw.githubusercontent.com/edgar-care/lambdas/dev/openapi.yaml" path="/auth/d/register" method="post" %}
-[https://raw.githubusercontent.com/edgar-care/lambdas/dev/openapi.yaml](https://raw.githubusercontent.com/edgar-care/lambdas/dev/openapi.yaml)
-{% endswagger %}
+<mark style="color:green;">`POST`</mark> `/auth/d/register`
 
-{% swagger src="https://raw.githubusercontent.com/edgar-care/lambdas/dev/openapi.yaml" path="/auth/p/register" method="post" %}
-[https://raw.githubusercontent.com/edgar-care/lambdas/dev/openapi.yaml](https://raw.githubusercontent.com/edgar-care/lambdas/dev/openapi.yaml)
-{% endswagger %}
+{% tabs %}
+{% tab title="Body" %}
+```json
+{
+	"email": "string", 
+	"password": "string",
+	"name": "string",
+	"firstname": "string",
+	"address": {
+		"street": "string", 
+		"zip_code": "string", 
+		"country": "string",
+		"city": "string"
+	}
+}
+```
+{% endtab %}
+
+{% tab title="Return body" %}
+```json
+{
+    "token": "string"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+<mark style="color:green;">`POST`</mark> `/auth/p/register`
+
+{% tabs %}
+{% tab title="Body" %}
+```
+{
+    "email": "string",
+    "password": "string"
+}
+```
+{% endtab %}
+
+{% tab title="Return body" %}
+```
+{
+    "token": "string"
+}
+```
+{% endtab %}
+{% endtabs %}
