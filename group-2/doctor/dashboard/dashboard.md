@@ -140,24 +140,27 @@ Attention, si la maladie ou le traitement n'est pas renseignée, elle sera suppr
 {% tab title="Body" %}
 ```json
 {
-	"name": "pierre",
-	"firstname": "paul",
-	"birthdate": 2874,
-	"sex": "MALE",
-	"weight": 56,
-	"height": 12,
-	"primary_doctor_id": "363636",
+	"name": "string",
+	"firstname": "string",
+	"birthdate": int,
+	"sex": "String",
+	"weight": int,
+	"height": int,
+	"primary_doctor_id": "string",
 	"medical_antecedents": [
 		{
-			"name": "Parasetamole",
-			"medicines": [ 	# ceci est le treatment
+			"antedisease_id": "string",
+			"name": "string",
+			"treatments": [
 				{
-					"period": ["MORNING"],
-					"day": ["MONDAY"],
-					"quantity": 2
+					"treatment_id": "string",
+					"name": "string",
+					"period": ["ENUM"],
+					"day": ["ENUM"],
+					"quantity": int
 				}
 			],
-			"still_relevant": true
+			"still_relevant": boolean
 		}
 	],
 	"onboarding_status": "DONE"
