@@ -157,7 +157,8 @@ Attention, si la maladie ou le traitement n'est pas renseignée, elle sera suppr
 					"name": "string",
 					"period": ["ENUM"],
 					"day": ["ENUM"],
-					"quantity": int
+					"quantity": int,
+					"medicine_id": "string"
 				}
 			],
 			"still_relevant": boolean
