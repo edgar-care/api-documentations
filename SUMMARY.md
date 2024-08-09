@@ -19,6 +19,9 @@
 
 ***
 
+* [Account](account.md)
+* [💻 Device](device.md)
+* [➿ Double Auth](double-auth.md)
 * [🗣️ Chat](chat.md)
 * [👨‍⚕️ Diagnostic](diagnostic.md)
 * [💊 Medicine](medicine.md)
