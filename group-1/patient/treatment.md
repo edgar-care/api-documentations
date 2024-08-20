@@ -15,6 +15,9 @@
       "day": ["ENUM"],
       "quantity": Int,
       "medicine_id": "String"
+      "start_date": Int,
+      "end_date": Int,
+      
     }
   ]
 }
@@ -39,6 +42,8 @@
 				],
 				"quantity": Int,
 				"medicine_id": "String"
+				"start_date": Int,
+				"end_date": Int,
 			}
 		]
 	}
@@ -69,6 +74,8 @@
 		],
 		"quantity": Int,
 		"medicine_id": "String"
+		"start_date": Int,
+		"end_date": Int,
 	}
 }
 ```
@@ -105,6 +112,8 @@
 				],
 				"quantity": int,
 				"medicine_id": String
+				"start_date": Int,
+				"end_date": Int,
 			}
 		]
 	},
@@ -127,6 +136,8 @@
       "Period": ["ENUM"],
       "Day": ["ENUM"],
       "Quantity": Int
+      "start_date": Int,
+      "end_date": Int,
     },
   ]
 }
@@ -147,6 +158,8 @@
 			],
 			"quantity": Int,
 			"medicine_id": "String"
+			"start_date": Int,
+			"end_date": Int,
 		},
 	]
 }

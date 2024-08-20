@@ -50,6 +50,8 @@ Recuperer un patient assiocier au dit docteur
 							ENUM
 						],
 						"quantity": Int
+						"start_date": Int,
+          					"end_date": Int,
 					},
 				],
 				"name": String,
@@ -107,6 +109,8 @@ Récuprer tous les patients associer au dit docteur
 									ENUM
 								],
 								"quantity": Int
+								"start_date": Int,
+          							"end_date": Int,
 							},
 						],
 						"name": String,
@@ -158,6 +162,8 @@ Attention, si la maladie ou le traitement n'est pas renseignée, elle sera suppr
 					"period": ["ENUM"],
 					"day": ["ENUM"],
 					"quantity": int,
+					"start_date": Int,
+          				"end_date": Int,
 					"medicine_id": "string"
 				}
 			],
@@ -195,6 +201,8 @@ Attention, si la maladie ou le traitement n'est pas renseignée, elle sera suppr
 							"MONDAY"
 						],
 						"quantity": 2
+						"start_date": Int,
+          					"end_date": Int,	
 					}
 				],
 				"still_relevant": true
@@ -242,6 +250,8 @@ Si le patient existe deja, cela edit juste le patient
 						"Day": ["SUNDAY"],
 						"Quantity": 10,
 						"medicine_id": "test second"
+						"start_date": Int,
+          					"end_date": Int,
 					}
 				],
 				"still_relevant": true
@@ -254,6 +264,8 @@ Si le patient existe deja, cela edit juste le patient
 						"Day": ["MONDAY", "SUNDAY"],
 						"Quantity": 10,
 						"medicine_id": "test2"
+						"start_date": Int,
+          					"end_date": Int,
 					}
 				],
 				"Still_relevant": true
@@ -297,6 +309,8 @@ Si le patient existe deja, cela edit juste le patient
 							"NOON"
 						],
 						"quantity": 10
+						"start_date": Int,
+          					"end_date": Int,
 					}
 				],
 				"name": "mal de Tete",
@@ -317,6 +331,8 @@ Si le patient existe deja, cela edit juste le patient
 							"NOON"
 						],
 						"quantity": 10
+						"start_date": Int,
+          					"end_date": Int,
 					}
 				],
 				"name": "Test second Medicine",

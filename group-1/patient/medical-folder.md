@@ -30,6 +30,8 @@ The "onboarding" route is a streamlined process designed to gather essential use
           "Day": ["ENUM"],
           "Quantity": int,
           "Medicine_id": "String"
+	  "start_date": Int,
+          "end_date": Int,
         },
       ],
       "Still_relevant": Boolean
@@ -87,6 +89,8 @@ The "onboarding" route is a streamlined process designed to gather essential use
 							],
 							"quantity": Int,
 							"medicine_id": "String"
+							"start_date": Int,
+          						"end_date": Int,
 						},
 					]
 				},
@@ -149,6 +153,8 @@ The "onboarding" route is a streamlined process designed to gather essential use
 							],
 							"quantity": Int,
 							"medicine_id": "String"
+							"start_date": Int,
+          						"end_date": Int,
 						},
 					]
 				},
@@ -195,6 +201,8 @@ The "onboarding" route is a streamlined process designed to gather essential use
 					"period": ["ENUM"],
 					"day": ["ENUM"],
 					"quantity": int
+					"start_date": Int,
+          				"end_date": Int,
 				}
 			],
 			"still_relevant": boolean
@@ -239,6 +247,8 @@ The "onboarding" route is a streamlined process designed to gather essential use
 							],
 							"quantity": Int,
 							"medicine_id": "String"
+						  	"start_date": Int,
+          						"end_date": Int,
 						},
 					]
 				},
