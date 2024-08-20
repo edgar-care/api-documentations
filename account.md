@@ -5,11 +5,8 @@
 Activation du compte
 
 {% tabs %}
-{% tab title="Body" %}
+{% tab title="NO Body" %}
 ```
-{
-	"enable_account": true
-}
 ```
 {% endtab %}
 
@@ -26,14 +23,11 @@ Activation du compte
 
 <mark style="color:orange;">`PUT`</mark>` ``/auth/disable_account`&#x20;
 
-désactivation du compte
+désactivation du compt
 
 {% tabs %}
-{% tab title="Body" %}
+{% tab title="NO Body" %}
 ```
-{
-	"enable_account": false
-}
 ```
 {% endtab %}
 
