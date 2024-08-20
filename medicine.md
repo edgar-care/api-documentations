@@ -11,6 +11,9 @@
 		"target_diseases": ["String"],
 		"treated_symptoms": ["String"],
 		"side_effects":     ["String"]
+	        "type": "string",    #pommade, gelule...
+	        "content": "string", #flacon, tube, boite...
+	        "quantity": int
 }
 ```
 {% endtab %}
@@ -31,6 +34,9 @@
 		"side_effects": [
 			"String"
 		]
+		"type": "string",    #pommade, gelule...
+	        "content": "string", #flacon, tube, boite...
+	        "quantity": int
 	}
 }
 ```
@@ -63,6 +69,9 @@
 			"side_effects": [
 				"String"
 			]
+			"type": "string",    #pommade, gelule...
+	        	"content": "string", #flacon, tube, boite...
+	        	"quantity": int
 		}
 	]
 }
@@ -95,6 +104,9 @@
 		"side_effects": [
 			"String"
 		]
+		"type": "string",    #pommade, gelule...
+	        "content": "string", #flacon, tube, boite...
+	        "quantity": int
 	}
 }
 ```
