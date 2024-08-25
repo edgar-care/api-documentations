@@ -29,7 +29,7 @@ Ajout méthod 2FA
 ```
 {
 	"method_2fa": "MOBILE",
-	"trusted_device_id": "string"
+	"trusted_device_id": "string"	#id device you want to put on Trustdevice
 }
 ```
 {% endtab %}
@@ -45,9 +45,30 @@ Ajout méthod 2FA
 
 {% tab title="body AUTHENTIFICATOR" %}
 ```
+No Body
+```
+
+
+{% endtab %}
+{% endtabs %}
+
+Verify code for Authentificator&#x20;
+
+<mark style="color:green;">`POST`</mark> /2fa/verify\_code/third\_party
+
+{% tabs %}
+{% tab title="First Tab" %}
+```
 {
-	"method_2fa": "AUTHENTIFICATOR",
-	"url": "string"
+	"token": "String"
+}
+```
+{% endtab %}
+
+{% tab title="Return" %}
+```
+{
+    true
 }
 ```
 {% endtab %}

@@ -74,9 +74,9 @@ Execute the query to change the status. If true, the query will change to false 
 
 #### Request Body
 
-| Name                                   | Type   | Description |
-| -------------------------------------- | ------ | ----------- |
-| name<mark style="color:red;">\*</mark> | String |             |
+| Name                                   | Type   | Description                    |
+| -------------------------------------- | ------ | ------------------------------ |
+| name<mark style="color:red;">\*</mark> | String | mettre l'extension dans le nom |
 
 {% tabs %}
 {% tab title="200: OK " %}

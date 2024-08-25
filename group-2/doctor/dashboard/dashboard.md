@@ -234,6 +234,7 @@ Si le patient existe deja, cela edit juste le patient
 		"Sex": "FEMALE",
 		"Weight": 1223,
 		"Height": 122,
+		"family_members_med_info_id": []String,
 		"Primary_doctor_id": "Pierre",
 		"medical_antecedents": [
 			{
