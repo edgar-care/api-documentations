@@ -2,10 +2,16 @@
 
 ### Méthods Enable
 
-\
-<mark style="color:green;">`POST`</mark> `/dashboard/double_auth/{ENUM}`\
-\
-Ajout méthod 2FA
+|                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------- |
+| <p><mark style="color:green;"><code>POST</code></mark> </p><pre><code>/2fa/method/email
+</code></pre>      |
+| <p><mark style="color:green;"><code>POST</code></mark></p><pre><code>/2fa/method/third_party
+</code></pre> |
+| <p><mark style="color:green;"><code>POST</code></mark></p><pre><code>/2fa/method/mobile
+</code></pre>      |
+
+
 
 {% tabs %}
 {% tab title="ENUM" %}
@@ -52,6 +58,8 @@ No Body
 {% endtab %}
 {% endtabs %}
 
+
+
 Verify code for Authentificator&#x20;
 
 <mark style="color:green;">`POST`</mark> /2fa/verify\_code/third\_party
@@ -92,10 +100,19 @@ Verify code for Authentificator&#x20;
 {% endtab %}
 {% endtabs %}
 
-\
-\
-<mark style="color:blue;">`GET`</mark> `/dashboard/2fa/double_auth/{id}`
 
+
+Get 2fa method
+
+<mark style="color:blue;">`GET`</mark>&#x20;
+
+```
+/dashboard/2fa
+```
+
+
+
+\
 \
 <mark style="color:red;">`DELETE`</mark> /`2fa/method/{ENUM}`
 
@@ -121,6 +138,18 @@ Verify code for Authentificator&#x20;
 {% endtabs %}
 
 
+
+
+
+
+
+
+
+
+
+
+
+\===================================================================
 
 ### Trust Device
 
