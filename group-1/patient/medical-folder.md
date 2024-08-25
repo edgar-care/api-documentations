@@ -191,7 +191,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
 	"weight": int,
 	"height": int,
 	"primary_doctor_id": "string",
-	"family_members_med_info_id": "string"
+	"family_members_med_info_id": []"string"
 	"medical_antecedents": [
 		{
 			"antedisease_id": "string",
