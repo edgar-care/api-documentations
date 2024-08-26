@@ -40,15 +40,6 @@
 ```
 {% endtab %}
 
-{% tab title="Body BACKUPCODE" %}
-```
-{
-	"method_2fa": "BACKUPCODE",
-	"secret": "string"	#id backup code
-}
-```
-{% endtab %}
-
 {% tab title="body AUTHENTIFICATOR" %}
 ```
 No Body
