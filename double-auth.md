@@ -73,6 +73,18 @@ Verify code for Authentificator&#x20;
 {% endtab %}
 {% endtabs %}
 
+
+
+Get 2fa method
+
+<mark style="color:blue;">`GET`</mark>&#x20;
+
+```
+/dashboard/2fa
+```
+
+
+
 {% tabs %}
 {% tab title="Body return" %}
 ```
@@ -90,18 +102,6 @@ Verify code for Authentificator&#x20;
 ```
 {% endtab %}
 {% endtabs %}
-
-
-
-Get 2fa method
-
-<mark style="color:blue;">`GET`</mark>&#x20;
-
-```
-/dashboard/2fa
-```
-
-
 
 \
 \
