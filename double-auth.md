@@ -105,7 +105,11 @@ Get 2fa method
 
 \
 \
-<mark style="color:red;">`DELETE`</mark> /`2fa/method/{ENUM}`
+<mark style="color:red;">`DELETE`</mark>&#x20;
+
+```
+/dashboard/2fa/{ENUM}
+```
 
 {% tabs %}
 {% tab title="ENUM" %}
