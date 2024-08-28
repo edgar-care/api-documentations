@@ -2,14 +2,14 @@
 
 ### Méthods Enable
 
-|                                                                                                            |
-| ---------------------------------------------------------------------------------------------------------- |
+|                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------- |
 | <p><mark style="color:green;"><code>POST</code></mark> </p><pre><code>/2fa/method/email
-</code></pre>      |
-| <p><mark style="color:green;"><code>POST</code></mark></p><pre><code>/2fa/method/third_party
+</code></pre>               |
+| <p><mark style="color:green;"><code>POST</code></mark></p><pre><code>/2fa/method/third_party/generate
 </code></pre> |
 | <p><mark style="color:green;"><code>POST</code></mark></p><pre><code>/2fa/method/mobile
-</code></pre>      |
+</code></pre>               |
 
 
 
