@@ -179,7 +179,8 @@ Ajout appareil de confiance
 {
 	"double_auth": {
 		"id": "Srting",
-		"device_name": "Srting",
+		"device_type": "Srting",
+		"browser": "String",
 		"ip_address": "Srting",
 		"latitude": float,
 		"longitude": float,
@@ -200,7 +201,8 @@ Ajout appareil de confiance
 	"devices": [
 		{
 			"id": "Srting",
-			"device_name": "Srting",
+			"device_type": "Srting",
+			"browser": "String",
 			"ip_address": "Srting",
 			"latitude": float,
 			"longitude": float,
@@ -209,7 +211,8 @@ Ajout appareil de confiance
 		},
 		{
 			"id": "Srting",
-			"device_name": "Srting",
+			"device_type": "Srting",
+			"browser": "String",
 			"ip_address": "Srting",
 			"latitude": float,
 			"longitude": float,
