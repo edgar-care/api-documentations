@@ -9,7 +9,8 @@ Récupération appareil connecté
 {
 	"devices": {
 		"id": "Srting",
-		"device_name": "Srting",
+		"device_type": "Srting",
+		"browser": "String",
 		"ip_address": "Srting",
 		"latitude": float,
 		"longitude": float,
@@ -33,7 +34,8 @@ Récupération de tous les appareils connectés
 	"devices": [
 		{
 			"id": "Srting",
-			"device_name": "Srting",
+			"device_type": "Srting",
+			"browser": "String",
 			"ip_address": "Srting",
 			"latitude": float,
 			"longitude": float,
@@ -42,7 +44,8 @@ Récupération de tous les appareils connectés
 		},
 		{
 			"id": "Srting",
-			"device_name": "Srting",
+			"device_type": "Srting",
+			"browser": "String",
 			"ip_address": "Srting",
 			"latitude": float,
 			"longitude": float,
