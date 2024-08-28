@@ -53,6 +53,24 @@ Keep in mind that you have to use one of those to be granted a <mark style="colo
 [https://raw.githubusercontent.com/edgar-care/lambdas/dev/openapi.yaml](https://raw.githubusercontent.com/edgar-care/lambdas/dev/openapi.yaml)
 {% endswagger %}
 
+
+
+Case 2FA activate
+
+{% tabs %}
+{% tab title="BODY RETURN" %}
+```
+{
+	"2fa_methods": [
+		"ENUM"
+	]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+##
+
 ## Register
 
 <mark style="color:green;">`POST`</mark> `/auth/d/register`
