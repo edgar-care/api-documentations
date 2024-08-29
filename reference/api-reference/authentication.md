@@ -67,6 +67,10 @@ Case 2FA activate
 }
 ```
 {% endtab %}
+
+{% tab title="Status code 200" %}
+
+{% endtab %}
 {% endtabs %}
 
 ##
