@@ -35,7 +35,7 @@
 ```
 {
 	"method_2fa": "MOBILE",
-	"trusted_device_id": "string"	#id device you want to put on Trustdevice
+	"trusted_device_id": "string"	#id device connect you want to put on Trustdevice
 }
 ```
 {% endtab %}
