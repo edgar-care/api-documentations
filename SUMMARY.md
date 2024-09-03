@@ -19,8 +19,8 @@
 
 ***
 
-* [Login 2fa](login-2fa.md)
-* [Account](account.md)
+* [🔐 Login 2fa](login-2fa.md)
+* [🧑‍🤝‍🧑 Account](account.md)
 * [💻 Device](device.md)
 * [➿ Double Auth](double-auth.md)
 * [🗣️ Chat](chat.md)

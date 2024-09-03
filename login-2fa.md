@@ -1,4 +1,4 @@
-# Login 2fa
+# 🔐 Login 2fa
 
 
 
@@ -35,12 +35,48 @@ Envoie email pour login 2fa email
 {
 	"email": "String",
 	"password": "String",
-	"token_2fa": "String" 	#NOTE IMPORTANT mettre \n a la fin du code
+	"token_2fa": "String"
 }
 ```
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
+{% endtab %}
+{% endtabs %}
+
+Login 2FA Mobile (websocket)
+
+{% tabs %}
+{% tab title="Body Web" %}
+```
+{
+    "action": "ready",
+    "authToken": "{{patientAuthTokenWS}}"
+}
+```
+{% endtab %}
+
+{% tab title="Body Mobile Ask" %}
+```
+{
+    "action": "askMobileConnection",
+    "uuid": "67f128d9-bc94-4de0-a32a-5f083a646d49",
+    "type": "patient",
+    "email": "test+lucasws@gmail.com",
+    "password": "testtest"
+}
+```
+{% endtab %}
+
+{% tab title="Body Mobile response" %}
+```
+{
+    "action": "responseMobileConnection",
+    "authToken": "{{patientAuthTokenWS}}",
+    "uuid": "",
+    "response": true
+}
+```
 {% endtab %}
 {% endtabs %}

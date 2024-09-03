@@ -1,4 +1,4 @@
-# Account
+# 🧑‍🤝‍🧑 Account
 
 <mark style="color:orange;">`PUT`</mark> /`auth/enable_account`&#x20;
 
