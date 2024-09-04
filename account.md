@@ -39,3 +39,40 @@ désactivation du compt
 ```
 {% endtab %}
 {% endtabs %}
+
+
+
+<mark style="color:green;">`POST`</mark>&#x20;
+
+```
+/auth/p/missing-password
+```
+
+{% tabs %}
+{% tab title="Body" %}
+```
+{
+    "email": "String"
+}    
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+<mark style="color:green;">`POST`</mark>
+
+```
+/auth/p/reset-password
+```
+
+{% tabs %}
+{% tab title="Body" %}
+```
+{
+    "email": "String",
+    "new_password": "String"
+}
+```
+{% endtab %}
+{% endtabs %}
