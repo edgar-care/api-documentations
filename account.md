@@ -70,9 +70,12 @@ désactivation du compt
 {% tab title="Body" %}
 ```
 {
-    "email": "String",
     "new_password": "String"
 }
 ```
+{% endtab %}
+
+{% tab title="Untitled" %}
+Query params uuid
 {% endtab %}
 {% endtabs %}
