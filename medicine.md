@@ -14,7 +14,7 @@
 	        "dosage": Int, 
 	        "dosage_unit": "string",
 	        "container": "String",
-		"dosage_form": "String",
+		"dosage_form": "String"
 }
 ```
 {% endtab %}
