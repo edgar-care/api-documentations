@@ -12,9 +12,9 @@
 		"treated_symptoms": ["String"],
 		"side_effects":     ["String"],
 	        "dosage": Int, 
-	        "dosage_unit": "string",
-	        "container": "String",
-		"dosage_form": "String"
+	        "dosage_unit": "UnitEnum",
+	        "container": "ContainerEnum",
+		"dosage_form": "FormEnum"
 }
 ```
 {% endtab %}
