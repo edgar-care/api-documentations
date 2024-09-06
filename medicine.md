@@ -10,7 +10,7 @@
 		"name":             "String",
 		"target_diseases": ["String"],
 		"treated_symptoms": ["String"],
-		"side_effects":     ["String"]
+		"side_effects":     ["String"],
 	        "dosage": Int, 
 	        "dosage_unit": "string",
 	        "container": "String",
