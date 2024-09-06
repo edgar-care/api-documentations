@@ -51,9 +51,9 @@ No Body
 
 
 
-Verify code for Authentificator&#x20;
+Activate 2fa third party
 
-<mark style="color:green;">`POST`</mark> /2fa/verify\_code/third\_party
+<mark style="color:green;">`POST`</mark> /2fa/method/third\_party
 
 {% tabs %}
 {% tab title="First Tab" %}

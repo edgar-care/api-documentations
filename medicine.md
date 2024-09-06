@@ -6,39 +6,60 @@
 {% tab title="Body" %}
 ```json
 {
+		"dci":             "String",
 		"name":             "String",
-		"unit":             "String",
 		"target_diseases": ["String"],
 		"treated_symptoms": ["String"],
 		"side_effects":     ["String"]
-	        "type": "string",    #pommade, gelule...
-	        "content": "string", #flacon, tube, boite...
-	        "quantity": int
+	        "dosage": Int, 
+	        "dosage_unit": "string",
+	        "container": "String",
+		"dosage_form": "String",
 }
+```
+{% endtab %}
+
+{% tab title="UnitEnum" %}
+```
+	"ml"
+	"mg"
+	"g"
+```
+{% endtab %}
+
+{% tab title="ContainerEnum" %}
+```
+	"FLACON"
+	"TUBE"
+	"BOITE"
+```
+{% endtab %}
+
+{% tab title="FormEnum" %}
+```
+	"CREME"
+	"POMMADE"
+	"GELULE"
+	"COMPRIME"
+	"GELE"
+	"SOLUTION_BUVABLE"
+	"POUDRE"
+	"SUPPOSITOIRE"
+	"AMPOULE"
+	"SUSPENSION_NASALE"
+	"SPRAY"
+	"COLLUTOIRE"
+	"SHAMPOOING"
+	"SOLUTION_INJECTABLE"
+	"COMPRIMER_EFERVESCENT"
+	"GRANULER_EN_SACHET"
+	"PASTILLE"
+	"SIROP"
 ```
 {% endtab %}
 
 {% tab title="Return 201" %}
 ```json
-{
-	"medicament": {
-		"id": "String",
-		"name": "String",
-		"unit": "piStringpi",
-		"target_diseases": [
-			"String",
-		],
-		"treated_symptoms": [
-			"String",
-		],
-		"side_effects": [
-			"String"
-		]
-		"type": "string",    #pommade, gelule...
-	        "content": "string", #flacon, tube, boite...
-	        "quantity": int
-	}
-}
 ```
 {% endtab %}
 {% endtabs %}
@@ -54,27 +75,6 @@
 
 {% tab title="Return 200" %}
 ```json
-{
-	"medicament": [
-		{
-			"id": "String",
-			"name": "String",
-			"unit": "String",
-			"target_diseases": [
-				"String"
-			],
-			"treated_symptoms": [
-				"String"
-			],
-			"side_effects": [
-				"String"
-			]
-			"type": "string",    #pommade, gelule...
-	        	"content": "string", #flacon, tube, boite...
-	        	"quantity": int
-		}
-	]
-}
 ```
 {% endtab %}
 {% endtabs %}
@@ -90,25 +90,6 @@
 
 {% tab title="Return 200" %}
 ```json
-{
-	"medicament": {
-		"id": "660876c2db5877da92d71b13",
-		"name": "String",
-		"unit": "String",
-		"target_diseases": [
-			"String"
-		],
-		"treated_symptoms": [
-			"String"
-		],
-		"side_effects": [
-			"String"
-		]
-		"type": "string",    #pommade, gelule...
-	        "content": "string", #flacon, tube, boite...
-	        "quantity": int
-	}
-}
 ```
 {% endtab %}
 {% endtabs %}
