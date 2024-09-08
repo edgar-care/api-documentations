@@ -1,4 +1,4 @@
-# Ordonnance
+# 💉 Ordonnance
 
 <mark style="color:green;">`POST`</mark>&#x20;
 
@@ -74,8 +74,37 @@
 ```
 {% endtab %}
 
-{% tab title="Second Tab" %}
-
+{% tab title="Return" %}
+```
+{
+	"prescription": {
+		"id": "String",
+		"created_by": "String",		# ID Doctor
+		"patient_id": "String",		# ID patient
+		"medicines": [
+			{
+				"medicine_id": "String",	# ID Médicament
+				"qsp": Int,
+				"qsp_unit": "TimeUnitEnum",
+				"comment": "String",
+				"periods": [
+					{
+						"quantity": Int,
+						"frequency": Int,
+						"frequency_ratio": Int,
+						"frequency_unit": "TimeUnitEnum",
+						"period_length": Int,
+						"period_unit": "TimeUnitEnum"
+					}
+				]
+			}
+		],
+		"createdAt": Int,	#Timestamp
+		"updatedAt": Int	#Timestamp
+	},
+	"url_prescription": "String URL"
+}
+```
 {% endtab %}
 {% endtabs %}
 
@@ -88,12 +117,36 @@
 ```
 
 {% tabs %}
-{% tab title="First Tab" %}
-
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
+{% tab title="Return" %}
+```
+{
+	"prescription": {
+		"id": "String",
+		"created_by": "String", 	# ID Doctor
+		"patient_id": "String", 	# ID patient
+		"medicines": [
+			{
+				"medicine_id": "String",	# ID Médicamen
+				"qsp": Int,
+				"qsp_unit": "TimeUnitEnum",
+				"comment": "String
+					{
+						"quantity": Int;
+						"frequency": Int,
+						"frequency_ratio": Int,
+						"frequency_unit": "TimeUnitEnum",
+						"period_length": Int,
+						"period_unit": "TimeUnitEnum"
+					}
+				]
+			}
+		],
+		"createdAt": Int,	#Timestamp
+		"updatedAt": Int	#Timestamp
+	},
+	"url_prescription": "String URL"
+}
+```
 {% endtab %}
 {% endtabs %}
 
@@ -104,11 +157,38 @@
 ```
 
 {% tabs %}
-{% tab title="First Tab" %}
-
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
+{% tab title="Return" %}
+```
+{
+	"prescriptions": [
+		{
+			"id": "String",
+			"created_by": "String", 	# ID Doctor
+			"patient_id": "String", 	# ID patient
+			"medicines": [
+				{
+					"medicine_id": "String", 	# ID Medicament
+					"qsp": Int,
+					"qsp_unit": "TimeUnitEnum",
+					"comment": "String",
+					"periods": [
+						{
+							"quantity": Int,
+							"frequency": Int,
+							"frequency_ratio": Int,
+							"frequency_unit": "TimeUnitEnum",
+							"period_length": Int,
+							"period_unit": "TimeUnitEnum"
+						}
+					]
+				}
+			],
+			"createdAt": Int,	#Timestamp
+			"updatedAt": Int,	#Timestamp
+			"URL": "String URL"
+		}
+	]
+}
+```
 {% endtab %}
 {% endtabs %}

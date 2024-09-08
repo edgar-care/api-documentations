@@ -35,5 +35,5 @@
     * [✔️ Pre-Diagnostic](group-2/doctor/dashboard/pre-diagnostic.md)
     * [📄 Document](group-2/doctor/dashboard/document.md)
     * [📋 Dashboard](group-2/doctor/dashboard/dashboard.md)
-    * [Ordonnance](group-2/doctor/dashboard/ordonnance.md)
+    * [💉 Ordonnance](group-2/doctor/dashboard/ordonnance.md)
   * [📅 Slot](group-2/doctor/slot.md)
