@@ -51,24 +51,53 @@ Login 2FA Mobile (websocket)
 {% tab title="Body Web" %}
 ```
 {
-    "action": "ready",
-    "authToken": "{{patientAuthTokenWS}}"
+    "action": "readyLogin"
 }
 ```
 {% endtab %}
 
+{% tab title="Return Web" %}
+```
+{
+    "message": "Connection ready",
+    "uuid": "String"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
 {% tab title="Body Mobile Ask" %}
 ```
 {
     "action": "askMobileConnection",
-    "uuid": "67f128d9-bc94-4de0-a32a-5f083a646d49",
-    "type": "patient",
-    "email": "test+lucasws@gmail.com",
-    "password": "testtest"
+    "uuid": "String",
+    "type": "type",    #type : p = Patient / d = Doctor
+    "email": "string",
+    "password": "string"
 }
 ```
 {% endtab %}
 
+{% tab title="Return Web Ask" %}
+```
+{
+    "message": "String"
+}
+```
+{% endtab %}
+
+{% tab title="Return Mobile Ask" %}
+```
+{
+    "action": "ask_mobile_connection",
+    "uuid": "String"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
 {% tab title="Body Mobile response" %}
 ```
 {
@@ -76,6 +105,24 @@ Login 2FA Mobile (websocket)
     "authToken": "{{patientAuthTokenWS}}",
     "uuid": "",
     "response": true
+}
+```
+{% endtab %}
+
+{% tab title="Return Mobile" %}
+```
+{
+	"message": "Message sent"
+}
+```
+{% endtab %}
+
+{% tab title="Return Web" %}
+```
+{		
+    "action":   "response_mobile_connection",
+    "code":     "String",
+    "response": Boolean,
 }
 ```
 {% endtab %}
