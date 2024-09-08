@@ -30,7 +30,7 @@ Envoie email pour login 2fa email
 </code></pre> |
 
 {% tabs %}
-{% tab title="Body 2fa email" %}
+{% tab title="Body 2fa " %}
 ```
 {
 	"email": "String",
@@ -38,10 +38,6 @@ Envoie email pour login 2fa email
 	"token_2fa": "String"
 }
 ```
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
 {% endtab %}
 {% endtabs %}
 
@@ -123,6 +119,26 @@ Login 2FA Mobile (websocket)
     "action":   "response_mobile_connection",
     "code":     "String",
     "response": Boolean,
+}
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="Body Login Mobile" %}
+```
+{
+    "email": "String",
+    "password": "String",
+    "token_2fa": "String"
+}
+```
+{% endtab %}
+
+{% tab title="Return Login" %}
+```
+{
+    "token": "String"
 }
 ```
 {% endtab %}
