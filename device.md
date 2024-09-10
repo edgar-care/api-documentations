@@ -57,3 +57,7 @@ Récupération de tous les appareils connectés
 ```
 {% endtab %}
 {% endtabs %}
+
+
+
+<mark style="color:red;">`DELETE`</mark>` ``/dashboard/device/{id}`
