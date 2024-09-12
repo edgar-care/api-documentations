@@ -39,6 +39,16 @@ Envoie email pour login 2fa email
 }
 ```
 {% endtab %}
+
+{% tab title="Body login Backupcode" %}
+```
+{
+	"email": "String",
+	"password": "String",
+	"backup_code": "String" #Non hasher
+}
+```
+{% endtab %}
 {% endtabs %}
 
 Login 2FA Mobile (websocket)
