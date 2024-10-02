@@ -16,15 +16,15 @@
       "medicine_id": "", # ID medicament
       "qsp": Int,
       "qsp_unit": "UnitEnum",
-      "comment": "String",
+      "comment": "String",                 #=> No comment ""
       "periods": [
         {
           "quantity": Int,
           "frequency": Int,
           "frequency_ratio": Int,
           "frequency_unit": "TimeUnitEnum",
-          "period_length": Int,
-          "period_unit": "TimeUnitEnum"
+          "period_length": Int,             #=> no period lenght 0
+          "period_unit": "TimeUnitEnum"     #=> no period Unit ""
         },
         {
           "quantity": Int,
