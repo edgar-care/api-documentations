@@ -11,7 +11,7 @@
 		"target_diseases": ["String"],
 		"treated_symptoms": ["String"],
 		"side_effects":     ["String"],
-	        "dosage": Int, 
+	        "dosage": Float, 
 	        "dosage_unit": "UnitEnum",
 	        "container": "ContainerEnum",
 		"dosage_form": "FormEnum"
