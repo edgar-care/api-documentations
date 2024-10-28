@@ -57,7 +57,10 @@ Login 2FA Mobile (websocket)
 {% tab title="Body Web" %}
 ```
 {
-    "action": "readyLogin"
+    "action": "readyLogin",
+    "os": "string",
+    "browser": "string",
+    "location": "string"
 }
 ```
 {% endtab %}
