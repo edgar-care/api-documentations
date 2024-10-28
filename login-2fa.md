@@ -100,6 +100,9 @@ Login 2FA Mobile (websocket)
 ```
 {
     "action": "ask_mobile_connection",
+    "browser": "String",
+    "location": "String",
+    "os": "String",
     "uuid": "String"
 }
 ```
