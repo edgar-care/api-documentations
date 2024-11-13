@@ -1,53 +1,73 @@
 # ⚕️ Treatment
 
+| ENUM    |
+| ------- |
+| JOUR    |
+| SEMAINE |
+| MOIS    |
+| ANNEE   |
+
+
+
+
+
+
+
 <mark style="color:green;">`POST`</mark> `/dashboard/treatment`
 
 {% tabs %}
 {% tab title="Body" %}
 ```
 {
-  "name": "String",       # a renseigner dans le cas ou la maladie n'existe pas
-  "disease_id": "String", # a renseigner lorsque l'on veut rajouter un treatement a une maladie deja existante
-  "still_relevant": Boolean,
-  "treatments": [
-    {
-      "period": ["ENUM"],
-      "day": ["ENUM"],
-      "quantity": Int,
-      "medicine_id": "String"
-      "start_date": Int,
-      "end_date": Int,
-      
-    }
-  ]
+		"medical_antecedent_id": "String", => ID du medical Antecedent au quelle vous voulez rattacher ce treatment
+		"created_by": "String",
+		"start_date": Int,
+		"end_date": Int,
+		"medicines": [
+			{
+				"period": [
+					{
+						"quantity": Int,
+						"frequency": Int,
+						"frequency_ratio": Int,
+						"frequency_unit": "ENUM",
+						"period_length": Int,
+						"period_unit": "ENUM",
+						"comment": "String"
+					}
+				]
+			}
+		]
 }
 ```
 {% endtab %}
 
 {% tab title="return 201" %}
 ```json
-{
-	"treatment": {
-		"name": "String",
-		"still_relevant": Boolean,
-		"treatment": [
+[
+	{
+		"id": "String",
+		"created_by": "String",
+		"start_date": Int,
+		"end_date": Int,
+		"medicines": [
 			{
 				"id": "String",
 				"period": [
-					"ENUM",
-					
-				],
-				"day": [
-					"ENUM"
-				],
-				"quantity": Int,
-				"medicine_id": "String"
-				"start_date": Int,
-				"end_date": Int,
+					{
+						"quantity": Int,
+						"frequency": Int,
+						"frequency_ratio": Int,
+						"frequency_unit": "ENUM",
+						"period_length": Int,
+						"period_unit": "ENUM",
+						"comment": "String"
+					}
+				]
 			}
 		]
 	}
-}
+]
 ```
 {% endtab %}
 {% endtabs %}
@@ -64,19 +84,26 @@
 {% tab title="Return 200" %}
 ```json
 {
-	"treatment": {
-		"id": "String",
-		"period": [
-			"ENUM"
-		],
-		"day": [
-			"ENUM",
-		],
-		"quantity": Int,
-		"medicine_id": "String"
-		"start_date": Int,
-		"end_date": Int,
-	}
+	"id": "String",
+	"created_by": "String",
+	"start_date": Int,
+	"end_date": Int,
+	"medicines": [
+		{
+			"id": "String",
+			"period": [
+				{
+					"quantity": Int,
+					"frequency": Int,
+					"frequency_ratio": Int,
+					"frequency_unit": "ENUM",
+					"period_length": Int,
+					"period_unit": "ENUM",
+					"comment": "String"
+				}
+			]
+		}
+	]
 }
 ```
 {% endtab %}
@@ -95,74 +122,90 @@
 ```json
 [
 	{
-		"antedisease": {
-			"id": String,
-			"name": String,
-			"chronicity": Int,
-			"still_relevant": Boolean
-		},
-		"treatments": [
+		"id": "String",
+		"created_by": "String",
+		"start_date": Int,
+		"end_date": Int,
+		"medicines": [
 			{
-				"id": String,
+				"id": "String",
 				"period": [
-					ENUM
-				],
-				"day": [
-					ENUM
-				],
-				"quantity": int,
-				"medicine_id": String
-				"start_date": Int,
-				"end_date": Int,
+					{
+						"quantity": Int,
+						"frequency": Int,
+						"frequency_ratio": Int,
+						"frequency_unit": "ENUM",
+						"period_length": Int,
+						"period_unit": "ENUM",
+						"comment": "String"
+					}
+				]
 			}
 		]
-	},
+	}
+]
 ```
 {% endtab %}
 {% endtabs %}
 
 \=========================================================================
 
-<mark style="color:orange;">`PUT`</mark> `/dashboard/treatment`
+<mark style="color:orange;">`PUT`</mark> `/dashboard/treatment/{id} => ID du medical Antecedent`
 
 {% tabs %}
 {% tab title="Body" %}
 ```json
 {
-  "Treatments": [
-    {
-      "ID": "String",
-      "medicine_id": "String",
-      "Period": ["ENUM"],
-      "Day": ["ENUM"],
-      "Quantity": Int
-      "start_date": Int,
-      "end_date": Int,
-    },
-  ]
+	"id": "String", => ID du treatment
+	"created_by": "String",
+	"start_date": Int,
+	"end_date": Int,
+	"medicines": [
+		{
+			"id": "String",
+			"period": [
+				{
+					"quantity": Int,
+					"frequency": Int,
+					"frequency_ratio": Int,
+					"frequency_unit": "ENUM",
+					"period_length": Int,
+					"period_unit": "ENUM",
+					"comment": "String"
+				}
+			]
+		}
+	]
 }
 ```
 {% endtab %}
 
 {% tab title="Return 200 " %}
 ```json
-{
-	"treatment": [
-		{
-			"id": "String",
-			"period": [
-				"ENUM"
-			],
-			"day": [
-				"ENUM"
-			],
-			"quantity": Int,
-			"medicine_id": "String"
-			"start_date": Int,
-			"end_date": Int,
-		},
-	]
-}
+[
+	{
+		"id": "String",
+		"created_by": "String",
+		"start_date": Int,
+		"end_date": Int,
+		"medicines": [
+			{
+				"id": "String",
+				"period": [
+					{
+						"quantity": Int,
+						"frequency": Int,
+						"frequency_ratio": Int,
+						"frequency_unit": "ENUM",
+						"period_length": Int,
+						"period_unit": "ENUM",
+						"comment": "String"
+					}
+				]
+			}
+		]
+	}
+]
 ```
 {% endtab %}
 {% endtabs %}
