@@ -12,10 +12,11 @@
 
 * [Patient](group-1/patient/README.md)
   * [📃 Medical Folder](group-1/patient/medical-folder.md)
-  * [🏥 Appointment](group-1/patient/appointment.md)
+  * [💊 Medical Antecedent](group-1/patient/medical-antecedent.md)
   * [⚕️ Treatment](group-1/patient/treatment.md)
   * [🗃️ Follow up treatment](group-1/patient/follow-up-treatment.md)
   * [📃 Document](group-1/patient/document.md)
+  * [🏥 Appointment](group-1/patient/appointment.md)
 
 ***
 
