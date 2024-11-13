@@ -4,6 +4,15 @@ The "onboarding" route is a streamlined process designed to gather essential use
 
 
 
+| ENUM    |
+| ------- |
+| JOUR    |
+| SEMAINE |
+| MOIS    |
+| ANNEE   |
+
+
+
 
 
 <mark style="color:green;">`POST`</mark> `/dashboard/medical-info`&#x20;
@@ -14,30 +23,42 @@ The "onboarding" route is a streamlined process designed to gather essential use
 {% tab title="Body" %}
 ```json
 {
-  "Name": "String",
-  "Firstname": "String",
-  "Birthdate": Int,
-  "Sex": "ENUM",
-  "Weight": Int,
-  "Height": Int,
-  "Primary_doctor_id": "String",
-  "family_members_med_info_id": []String,
-  "Medical_antecedents": [
+  "name": "String",
+  "firstname": "String",
+  "birthdate": Int,
+  "sex": "String",
+  "weight": Int,
+  "height": Int,
+  "primary_doctor_id": "String",
+  "medical_antecedents": [
     {
-      "Name": "String",
+      "name": "String",
+      "symptoms": ["String"],
       "treatments": [
         {
-          "Period": ["ENUM"],
-          "Day": ["ENUM"],
-          "Quantity": int,
-          "Medicine_id": "String"
-	  "start_date": Int,
-          "end_date": Int,
-        },
-      ],
-      "Still_relevant": Boolean
+          "created_by": "String",
+          "start_date": Int,
+          "end_date": Int4567899,
+          "medicines": [
+            {
+              "period": [
+                {
+                  "quantity": Int,
+                  "frequency": Int,
+                  "frequency_ratio": Int,
+                  "frequency_unit": "ENUM",
+                  "period_length": Int,
+                  "period_unit": "ENUM",
+                  "comment": "String"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "family_members_med_info_id": ["String"]
 }
 ```
 {% endtab %}
@@ -52,6 +73,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
   "Weight": Int,
   "Height": Int,
   "Primary_doctor_id": "String",
+  "family_members_med_info_id": ["String"],
   "Medical_antecedents": []
 }
 ```
@@ -60,51 +82,51 @@ The "onboarding" route is a streamlined process designed to gather essential use
 {% tab title="Return 201" %}
 ```json
 {
-	"Medical-info": {
-		"antecedent_diseases": {
-			"antediseases": [
-				{
-					"AnteDisease": {
-						"id": "String",
-						"name": "String",
-						"chronicity": Int,
-						"surgery_ids": [
-							"String"
-						],
-						"symptoms": [
-							"String",
-						],
-						"treatment_ids": [
-							"String",
-						],
-						"still_relevant": Boolean
-					},
-					"Treatments": [
-						{
-							"id": "String",
-							"period": [
-								"ENUM"
-							],
-							"day": [
-								"ENUMDAY"
-							],
-							"quantity": Int,
-							"medicine_id": "String"
-							"start_date": Int,
-          						"end_date": Int,
-						},
-					]
-				},
-			]
-		},
+	"medical_folder": {
 		"birthdate": Int,
+		"family_members_med_info_id": ["String"],
 		"firstname": "String",
 		"height": Int,
 		"id": "String",
+		"medical_antecedents": [
+			{
+				"id": "String",
+				"name": "String",
+				"symptoms": [
+					"String"
+				],
+				"treatments": [
+					{
+						"id": "String",
+						"created_by": "String",
+						"start_date": Int,
+						"end_date": Int,
+						"medicines": [
+							{
+								"id": "String",
+								"period": [
+									{
+										"quantity": Int,
+										"frequency": Int,
+										"frequency_ratio": Int,
+										"frequency_unit": "ENUM",
+										"period_length": Int,
+										"period_unit": "ENUM",
+										"comment": "String"
+									}
+								]
+							}
+						]
+					}
+				],
+				"createdAt": Int,
+				"updatedAt": Int
+			}
+		],
 		"name": "String",
 		"onboarding_status": "DONE",
 		"primary_doctor_id": "String",
-		"sex": "ENUM",
+		"sex": "String",
 		"weight": Int
 	}
 }
@@ -124,51 +146,52 @@ The "onboarding" route is a streamlined process designed to gather essential use
 {% tab title="Return 200" %}
 ```json
 {
-	"Medical-info": {
-		"antecedent_diseases": {
-			"antediseases": [
-				{
-					"AnteDisease": {
-						"id": "String",
-						"name": "String",
-						"chronicity": Int,
-						"surgery_ids": [
-							"String"
-						],
-						"symptoms": [
-							"String",
-						],
-						"treatment_ids": [
-							"String",
-						],
-						"still_relevant": Boolean
-					},
-					"Treatments": [
-						{
-							"id": "String",
-							"period": [
-								"ENUM"
-							],
-							"day": [
-								"ENUMDAY"
-							],
-							"quantity": Int,
-							"medicine_id": "String"
-							"start_date": Int,
-          						"end_date": Int,
-						},
-					]
-				},
-			]
-		},
+	"medical_folder": {
 		"birthdate": Int,
+		"family_members_med_info_id": [
+			""
+		],
 		"firstname": "String",
 		"height": Int,
 		"id": "String",
+		"medical_antecedents": [
+			{
+				"id": "String",
+				"name": "String",
+				"symptoms": [
+					"String"
+				],
+				"treatments": [
+					{
+						"id": "String",
+						"created_by": "String",
+						"start_date": Int,
+						"end_date": Int,
+						"medicines": [
+							{
+								"id": "String",
+								"period": [
+									{
+										"quantity": Int,
+										"frequency": Int,
+										"frequency_ratio": Int,
+										"frequency_unit": "ENUM",
+										"period_length": Int,
+										"period_unit": "ENUM",
+										"comment": "String"
+									}
+								]
+							}
+						]
+					}
+				],
+				"createdAt": Int,
+				"updatedAt": Int
+			},
 		"name": "String",
 		"onboarding_status": "DONE",
 		"primary_doctor_id": "String",
-		"sex": "ENUM",
+		"sex": "String",
 		"weight": Int
 	}
 }
@@ -192,25 +215,6 @@ The "onboarding" route is a streamlined process designed to gather essential use
 	"height": int,
 	"primary_doctor_id": "string",
 	"family_members_med_info_id": []"string"
-	"medical_antecedents": [
-		{
-			"antedisease_id": "string",
-			"name": "string",
-			"treatments": [
-				{
-					"treatment_id": "string",
-					"name": "string",
-					"period": ["ENUM"],
-					"day": ["ENUM"],
-					"quantity": int
-					"start_date": Int,
-          				"end_date": Int,
-				}
-			],
-			"still_relevant": boolean
-		}
-	],
-	"onboarding_status": "DONE"
 }
 
 ```
@@ -219,51 +223,19 @@ The "onboarding" route is a streamlined process designed to gather essential use
 {% tab title="Return 200" %}
 ```json
 {
-	"Medical-info": {
-		"antecedent_diseases": {
-			"antediseases": [
-				{
-					"AnteDisease": {
-						"id": "String",
-						"name": "String",
-						"chronicity": Int,
-						"surgery_ids": [
-							"String"
-						],
-						"symptoms": [
-							"String",
-						],
-						"treatment_ids": [
-							"String",
-						],
-						"still_relevant": Boolean
-					},
-					"Treatments": [
-						{
-							"id": "String",
-							"period": [
-								"ENUM"
-							],
-							"day": [
-								"ENUMDAY"
-							],
-							"quantity": Int,
-							"medicine_id": "String"
-						  	"start_date": Int,
-          						"end_date": Int,
-						},
-					]
-				},
-			]
-		},
+	"medical_folder": {
 		"birthdate": Int,
+		"family_members_med_info_id": ["String"],
 		"firstname": "String",
 		"height": Int,
 		"id": "String",
+		"medical_antecedents": [
+			"String",
+		],
 		"name": "String",
 		"onboarding_status": "DONE",
 		"primary_doctor_id": "String",
-		"sex": "ENUM",
+		"sex": "String",
 		"weight": Int
 	}
 }
