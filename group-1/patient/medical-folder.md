@@ -36,7 +36,6 @@ The "onboarding" route is a streamlined process designed to gather essential use
       "symptoms": ["String"],
       "treatments": [
         {
-          "created_by": "String",
           "start_date": Int,
           "end_date": Int4567899,
           "medicines": [
