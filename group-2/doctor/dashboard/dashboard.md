@@ -1,4 +1,4 @@
-# 📋 Dashboard "! Maintenance !"
+# 📋 Dashboard
 
 
 
@@ -210,7 +210,6 @@ Creation d'un nouveau patient depuis un docteur
 							"symptoms": ["String"],
 							"treatments": [
 								{
-									"created_by": "String",
 									"start_date": Int,
 									"end_date": Int,
 									"medicines": [
