@@ -27,7 +27,6 @@
 	"symptoms": ["String"],
 	"treatments": [
 		{
-			"created_by": "String",
 			"start_date": Int,
 			"end_date": Int,
 			"medicines": [

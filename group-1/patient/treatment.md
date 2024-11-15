@@ -20,7 +20,6 @@
 ```
 {
 		"medical_antecedent_id": "String", => ID du medical Antecedent au quelle vous voulez rattacher ce treatment
-		"created_by": "String",
 		"start_date": Int,
 		"end_date": Int,
 		"medicines": [
