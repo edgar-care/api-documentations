@@ -41,6 +41,8 @@ The "onboarding" route is a streamlined process designed to gather essential use
           "end_date": Int4567899,
           "medicines": [
             {
+              "medicine_id": "String",
+	      "comment": "String",
               "period": [
                 {
                   "quantity": Int,
@@ -48,8 +50,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
                   "frequency_ratio": Int,
                   "frequency_unit": "ENUM",
                   "period_length": Int,
-                  "period_unit": "ENUM",
-                  "comment": "String"
+                  "period_unit": "ENUM"
                 }
               ]
             }
@@ -103,7 +104,8 @@ The "onboarding" route is a streamlined process designed to gather essential use
 						"end_date": Int,
 						"medicines": [
 							{
-								"id": "String",
+								"medicine_id": "String",
+								"comment": "String",
 								"period": [
 									{
 										"quantity": Int,
@@ -111,8 +113,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
 										"frequency_ratio": Int,
 										"frequency_unit": "ENUM",
 										"period_length": Int,
-										"period_unit": "ENUM",
-										"comment": "String"
+										"period_unit": "ENUM"
 									}
 								]
 							}
@@ -169,7 +170,8 @@ The "onboarding" route is a streamlined process designed to gather essential use
 						"end_date": Int,
 						"medicines": [
 							{
-								"id": "String",
+								"medicine_id": "String",
+								"comment": "String",
 								"period": [
 									{
 										"quantity": Int,
@@ -177,8 +179,7 @@ The "onboarding" route is a streamlined process designed to gather essential use
 										"frequency_ratio": Int,
 										"frequency_unit": "ENUM",
 										"period_length": Int,
-										"period_unit": "ENUM",
-										"comment": "String"
+										"period_unit": "ENUM"
 									}
 								]
 							}

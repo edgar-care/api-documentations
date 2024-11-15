@@ -25,6 +25,8 @@
 		"end_date": Int,
 		"medicines": [
 			{
+				"medicine_id": "String",
+				"comment": "String",
 				"period": [
 					{
 						"quantity": Int,
@@ -32,8 +34,7 @@
 						"frequency_ratio": Int,
 						"frequency_unit": "ENUM",
 						"period_length": Int,
-						"period_unit": "ENUM",
-						"comment": "String"
+						"period_unit": "ENUM"
 					}
 				]
 			}
@@ -52,7 +53,8 @@
 		"end_date": Int,
 		"medicines": [
 			{
-				"id": "String",
+				"medicine_id": "String",
+				"comment": "String",
 				"period": [
 					{
 						"quantity": Int,
@@ -60,8 +62,7 @@
 						"frequency_ratio": Int,
 						"frequency_unit": "ENUM",
 						"period_length": Int,
-						"period_unit": "ENUM",
-						"comment": "String"
+						"period_unit": "ENUM"
 					}
 				]
 			}
@@ -90,7 +91,8 @@
 	"end_date": Int,
 	"medicines": [
 		{
-			"id": "String",
+			"medicine_id": "String",
+			"comment": "String",
 			"period": [
 				{
 					"quantity": Int,
@@ -98,8 +100,7 @@
 					"frequency_ratio": Int,
 					"frequency_unit": "ENUM",
 					"period_length": Int,
-					"period_unit": "ENUM",
-					"comment": "String"
+					"period_unit": "ENUM"
 				}
 			]
 		}
@@ -128,7 +129,8 @@
 		"end_date": Int,
 		"medicines": [
 			{
-				"id": "String",
+				"medicine_id": "String",
+				"comment": "String",
 				"period": [
 					{
 						"quantity": Int,
@@ -136,8 +138,7 @@
 						"frequency_ratio": Int,
 						"frequency_unit": "ENUM",
 						"period_length": Int,
-						"period_unit": "ENUM",
-						"comment": "String"
+						"period_unit": "ENUM"
 					}
 				]
 			}
@@ -162,7 +163,8 @@
 	"end_date": Int,
 	"medicines": [
 		{
-			"id": "String",
+			"medicine_id": "String",
+			"comment": "String",
 			"period": [
 				{
 					"quantity": Int,
@@ -170,8 +172,7 @@
 					"frequency_ratio": Int,
 					"frequency_unit": "ENUM",
 					"period_length": Int,
-					"period_unit": "ENUM",
-					"comment": "String"
+					"period_unit": "ENUM"
 				}
 			]
 		}
@@ -190,7 +191,8 @@
 		"end_date": Int,
 		"medicines": [
 			{
-				"id": "String",
+				"medicine_id": "String",
+				"comment": "String",
 				"period": [
 					{
 						"quantity": Int,
@@ -198,8 +200,7 @@
 						"frequency_ratio": Int,
 						"frequency_unit": "ENUM",
 						"period_length": Int,
-						"period_unit": "ENUM",
-						"comment": "String"
+						"period_unit": "ENUM"
 					}
 				]
 			}
