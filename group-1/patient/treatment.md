@@ -150,13 +150,12 @@
 
 \=========================================================================
 
-<mark style="color:orange;">`PUT`</mark> `/dashboard/treatment/{id} => ID du medical Antecedent`
+<mark style="color:orange;">`PUT`</mark> `/dashboard/treatment/{id} => ID du treatment`
 
 {% tabs %}
 {% tab title="Body" %}
 ```json
 {
-	"id": "String", => ID du treatment
 	"created_by": "String",
 	"start_date": Int,
 	"end_date": Int,
