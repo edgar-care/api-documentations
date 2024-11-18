@@ -79,3 +79,24 @@ désactivation du compt
 Query params uuid
 {% endtab %}
 {% endtabs %}
+
+
+
+<mark style="color:green;">`POST`</mark>` ``/auth/delete_account`
+
+Email envoyer confirmant l'action
+
+{% tabs %}
+{% tab title="No body" %}
+
+{% endtab %}
+
+{% tab title="Return" %}
+```
+{
+	"message": "Account deletion scheduled"
+}
+```
+{% endtab %}
+{% endtabs %}
+
