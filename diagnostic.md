@@ -86,3 +86,20 @@
 ```
 {% endtab %}
 {% endtabs %}
+
+
+
+## Get NLP Status
+
+<mark style="color:blue;">`GET`</mark> `/nlp/status`
+
+{% tabs %}
+{% tab title="200: " %}
+{
+
+"status": "running"
+
+}
+{% endtab %}
+{% endtabs %}
+
