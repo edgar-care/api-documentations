@@ -82,6 +82,8 @@ Query params uuid
 
 
 
+
+
 <mark style="color:green;">`POST`</mark>` ``/auth/delete_account`
 
 Email envoyer confirmant l'action
@@ -95,6 +97,33 @@ Email envoyer confirmant l'action
 ```
 {
 	"message": "Account deletion scheduled"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+<mark style="color:green;">`POST`</mark>` ``/auth/update_password`
+
+Update password
+
+{% tabs %}
+{% tab title="First Tab" %}
+```
+{
+    "old_password": "String",
+    "new_password": "String"
+}
+```
+
+
+{% endtab %}
+
+{% tab title="Second Tab" %}
+```
+{
+    		"password": "updated",
 }
 ```
 {% endtab %}
