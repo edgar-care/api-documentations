@@ -61,9 +61,14 @@ Case 2FA activate
 {% tab title="BODY RETURN" %}
 ```
 {
-	"2fa_methods": [
-		"ENUM"
-	]
+	"Methods": [
+		"ENUM",
+	],
+	"DeviceInfo": {
+		"os": "String",
+		"browser": "String",
+		"location": "String"
+	}
 }
 ```
 {% endtab %}
