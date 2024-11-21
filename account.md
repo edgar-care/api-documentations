@@ -45,7 +45,7 @@ désactivation du compt
 <mark style="color:green;">`POST`</mark>&#x20;
 
 ```
-/auth/missing-password
+/auth/{type}/missing-password
 ```
 
 {% tabs %}
@@ -63,7 +63,7 @@ désactivation du compt
 <mark style="color:green;">`POST`</mark>
 
 ```
-/auth/reset-password
+/auth/{type}/reset-password
 ```
 
 {% tabs %}
