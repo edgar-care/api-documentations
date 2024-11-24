@@ -198,7 +198,7 @@
 
 
 
-<mark style="color:orange;">`PUT`</mark> `/dashboard/medical-antecedent`
+<mark style="color:orange;">`PUT`</mark> `/dashboard/medical-antecedent/{id}`
 
 {% tabs %}
 {% tab title="Body" %}
